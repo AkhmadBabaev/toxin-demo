@@ -1,0 +1,10 @@
+extends components/page/page
+
+block append head
+  if isProdEnv
+    link(rel = "stylesheet" href = "index.bundle.css")
+
+block append scripts
+  script(src = "index.bundle.js")
+
+block append page-content
