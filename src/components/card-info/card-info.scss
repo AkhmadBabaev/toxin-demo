@@ -1,0 +1,57 @@
+.card-info {
+  padding: 20px;
+  background-color: #fff;
+
+  &__header,
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__footer {
+    align-items: center;
+  }
+
+  &__separate-line {
+    background: rgba(31, 32, 65, 0.1);
+    height: 1px;
+    margin: 10px 0;
+  }
+
+  &__id {
+    font-family: 'Quicksand';
+    font-weight: bold;
+    color: $title-color;
+    line-height: 17px;
+    white-space: nowrap;
+  }
+
+  &__price {
+    color: $basic-color-light;
+    white-space: nowrap;
+    line-height: 18px;
+  }
+
+  &__reviews {
+    color: $basic-color-light;
+    white-space: nowrap;
+    line-height: 18px;
+  }
+
+  &__stars {
+    display: flex;
+  }
+
+  &__star {
+    width: 24px;
+    height: 24px;
+    background-image: url('./icons/star_border.png');
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+
+    &_activated {
+      background-image: url('./icons/star.png');
+    }
+  }
+}

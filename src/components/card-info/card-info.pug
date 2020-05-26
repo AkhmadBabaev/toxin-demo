@@ -1,0 +1,27 @@
+mixin card-info({ id, reviews = 0, price = 1000, stars = 3 } = {})
+  -
+    const count = [];
+    for (let i = 0; i < 5; i++) {
+      count[i] = i;
+    }
+
+  .card-info.js-card-info
+    .card-info__header
+      .card-info__id= `№ ${id}`
+      .card-info__price
+        b= `${price}₽ `
+        | в сутки
+
+    .card-info__separate-line
+
+    .card-info__footer
+      .card-info__stars.js-card-info__stars
+        each star, index in count
+          - let classes = 'card-info__star js-card-info__star';
+          - count[index] <= stars && (classes += ' card-info__star_activated');
+
+          div(class = classes data-index= star)
+
+      .card-info__reviews
+        b= reviews
+        |  Отзывов
