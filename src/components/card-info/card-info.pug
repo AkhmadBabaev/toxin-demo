@@ -18,7 +18,7 @@ mixin card-info({ id, reviews = 0, price = 1000, stars = 3 } = {})
       .card-info__stars.js-card-info__stars
         each star, index in count
           - let classes = 'card-info__star js-card-info__star';
-          - count[index] <= stars && (classes += ' card-info__star_activated');
+          - count[index] < stars && (classes += ' card-info__star_activated');
 
           div(class = classes data-index= star)
 
