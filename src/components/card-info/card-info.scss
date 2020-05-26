@@ -1,5 +1,5 @@
 .card-info {
-  padding: 20px;
+  padding: 23px 20px 18px;
   background-color: #fff;
 
   &__header,
@@ -15,7 +15,7 @@
   &__separate-line {
     background: rgba(31, 32, 65, 0.1);
     height: 1px;
-    margin: 10px 0;
+    margin: 12px 0 9px;
   }
 
   &__id {
@@ -26,10 +26,27 @@
     white-space: nowrap;
   }
 
+  &__decorated-id {
+    font-size: 19px;
+  }
+
+  &__type {
+    font: 12px/15px $basic-font-name;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #BC9CFF;
+  }
+
   &__price {
     color: $basic-color-light;
     white-space: nowrap;
+    font-size: 12px;
     line-height: 18px;
+    margin-right: -2px;
+
+    & b {
+      font-size: 14px;
+    }
   }
 
   &__reviews {
@@ -40,6 +57,7 @@
 
   &__stars {
     display: flex;
+    margin-left: 2px;
   }
 
   &__star {

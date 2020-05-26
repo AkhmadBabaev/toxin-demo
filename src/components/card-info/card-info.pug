@@ -1,5 +1,6 @@
-mixin card-info({ id, reviews = 0, price = 1000, stars = 3 } = {})
+mixin card-info({ id, reviews = 0, price = 1000, stars = 3, type } = {})
   -
+    const isLuxury = type === "luxury";
     const count = [];
     for (let i = 0; i < 5; i++) {
       count[i] = i;
@@ -7,7 +8,12 @@ mixin card-info({ id, reviews = 0, price = 1000, stars = 3 } = {})
 
   .card-info.js-card-info
     .card-info__header
-      .card-info__id= `№ ${id}`
+      .card-info__id
+        | №&nbsp;
+        span.card-info__decorated-id= id
+        if isLuxury
+          span.card-info__type &nbsp;люкс
+
       .card-info__price
         b= `${price}₽ `
         | в сутки
