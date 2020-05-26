@@ -1,0 +1,13 @@
+include ../card/card
+
+mixin cards-list({ cards })
+  .cards-list
+    each card in cards
+      .cards-list__card
+        +card({
+          id: card.id,
+          price: card.price,
+          stars: card.stars,
+          reviews: card.reviews,
+          images: card.images
+        })

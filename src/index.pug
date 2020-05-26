@@ -1,5 +1,5 @@
 extends components/page/page
-include components/card/card
+include components/cards-list/cards-list
 
 block append variables
   - const title = 'FSD landing';
@@ -16,11 +16,4 @@ block append scripts
 block append page-content
   - const data = require('./data.json');
 
-  each card in data.cards
-    +card({
-      id: card.id,
-      price: card.price,
-      stars: card.stars,
-      reviews: card.reviews,
-      images: card.images
-    })
+  +cards-list({ cards: data.cards })
