@@ -2,7 +2,7 @@
   "cards": [{
     "id": 888,
     "price": "9 990",
-    "stars": 5,
+    "rating": 5,
     "reviews": 145,
     "type": "luxury",
     "images": [{
@@ -21,7 +21,7 @@
   }, {
     "id": 840,
     "price": "9 900",
-    "stars": 4,
+    "rating": 4,
     "reviews": 65,
     "images": [{
       "url": "./assets/images/image2.jpg",

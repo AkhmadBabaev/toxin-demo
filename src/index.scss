@@ -3,7 +3,6 @@
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 
 @import './styles/variables';
-@import './styles/mixins';
 @import './styles/fonts';
 @import './styles/basic';
 
@@ -16,3 +15,4 @@
 @import './components/card/card';
 @import './components/card-info/card-info';
 @import './components/card-slider/card-slider';
+@import './components/star-rating/star-rating';

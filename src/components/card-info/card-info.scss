@@ -54,22 +54,4 @@
     white-space: nowrap;
     line-height: 18px;
   }
-
-  &__stars {
-    display: flex;
-    margin-left: 2px;
-  }
-
-  &__star {
-    width: 24px;
-    height: 24px;
-    background-image: url('./icons/star_border.png');
-    background-repeat: no-repeat;
-
-    cursor: pointer;
-
-    &_activated {
-      background-image: url('./icons/star.png');
-    }
-  }
 }

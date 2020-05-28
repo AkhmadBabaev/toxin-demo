@@ -2,8 +2,11 @@
   Montserrat
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 
+@import './mixins/fonts';
+
 /* ~ ~ ~ ~ ~ ~ ~   Regular   ~ ~ ~ ~ ~ ~ ~ */
 
+// Fixme: regular is 400
 @include font-face('Montserrat', 'Montserrat-Regular', 300);
 
 /* ~ ~ ~ ~ ~ ~ ~   Bold   ~ ~ ~ ~ ~ ~ ~ */
@@ -15,3 +18,9 @@
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 
 @include font-face('Quicksand', 'Quicksand-Bold', 700);
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+  Material Icons
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+
+@include font-face('Material Icons', 'MaterialIcons-Regular', 400);

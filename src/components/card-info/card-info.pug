@@ -1,10 +1,7 @@
-mixin card-info({ id, reviews = 0, price = 1000, stars = 3, type } = {})
-  -
-    const isLuxury = type === "luxury";
-    const count = [];
-    for (let i = 0; i < 5; i++) {
-      count[i] = i;
-    }
+include ../star-rating/star-rating
+
+mixin card-info({ id, reviews = 0, price = 1000, rating = 1, type } = {})
+  - const isLuxury = type === "luxury";
 
   .card-info.js-card-info
     .card-info__header
@@ -21,12 +18,7 @@ mixin card-info({ id, reviews = 0, price = 1000, stars = 3, type } = {})
     .card-info__separate-line
 
     .card-info__footer
-      .card-info__stars.js-card-info__stars
-        each star, index in count
-          - let classes = 'card-info__star js-card-info__star';
-          - count[index] < stars && (classes += ' card-info__star_activated');
-
-          div(class = classes data-index= star)
+      +star-rating({ rating })
 
       .card-info__reviews
         b= reviews

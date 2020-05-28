@@ -1,10 +1,10 @@
 include ../card-info/card-info
 include ../card-slider/card-slider
 
-mixin card({ id, reviews = 0, price = 1000, stars = 1, images, type } = {})
+mixin card({ id, reviews = 0, price = 1000, rating = 1, images, type } = {})
   .card.js-card
     .js-card__images-gallery
       +card-slider({ images })
 
     .js-card__info
-      +card-info({ id, reviews, price, stars, type })
+      +card-info({ id, reviews, price, rating, type })
