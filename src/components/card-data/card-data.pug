@@ -1,0 +1,25 @@
+include ../star-rating/star-rating
+
+mixin card-data({ id, reviews = 0, price = 1000, rating = 1, type } = {})
+  - const isLuxury = type === "luxury";
+
+  .card-data.js-card-data
+    .card-data__header
+      .card-data__id
+        | №&nbsp;
+        span.card-data__decorated-id= id
+        if isLuxury
+          span.card-data__type &nbsp;люкс
+
+      .card-data__price
+        b= `${price}₽ `
+        | в сутки
+
+    .card-data__separate-line
+
+    .card-data__footer
+      +star-rating({ rating })
+
+      .card-data__reviews
+        b= reviews
+        |  Отзывов
