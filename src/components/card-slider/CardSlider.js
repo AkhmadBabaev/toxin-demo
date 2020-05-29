@@ -1,16 +1,16 @@
 import Swiper from 'swiper';
 
 class CardSlider {
-  constructor() {
-    this.setSlider();
+  constructor(element) {
+    this._init(element);
   }
 
-  setSlider() {
-    this.slider = new Swiper('.js-card-slider', {
+  _init(element) {
+    new Swiper(element, {
       loop: true,
+      lazy: true,
       pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+        el: '.card-slider__pagination',
       },
       navigation: {
         nextEl: '.card-slider__button-next',
