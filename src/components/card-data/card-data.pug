@@ -1,25 +1,27 @@
 include ../star-rating/star-rating
 
-mixin card-data({ id, reviews = 0, price = 1000, rating = 1, type } = {})
-  - const isLuxury = type === "luxury";
+mixin card-data({ id, reviews = 0, price = 1000, rating = 1, type = "standart" })
+  -
+    const className = "card-data";
+    const isLuxury = type === "luxury";
 
-  .card-data.js-card-data
-    .card-data__header
-      .card-data__id
+  div(class = `${className} js-card-data`)
+    div(class = `${className}__header`)
+      div(class = `${className}__id`)
         | №&nbsp;
-        span.card-data__decorated-id= id
+        span(class = `${className}__decorated-id`)= id
         if isLuxury
-          span.card-data__type &nbsp;люкс
+          span(class = `${className}__type`) люкс
 
-      .card-data__price
+      div(class = `${className}__price`)
         b= `${price}₽ `
         | в сутки
 
-    .card-data__separate-line
+    div(class = `${className}__separator`)
 
-    .card-data__footer
+    div(class = `${className}__footer`)
       +star-rating({ rating })
 
-      .card-data__reviews
+      div(class = `${className}__reviews`)
         b= reviews
         |  Отзывов

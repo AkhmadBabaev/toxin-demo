@@ -1,5 +1,5 @@
 .card-data {
-  padding: 23px 20px 18px;
+  padding: 1.6428em 1.4285em 1.2857em;
   background-color: #fff;
 
   &__header,
@@ -12,46 +12,47 @@
     align-items: center;
   }
 
-  &__separate-line {
-    background: rgba(31, 32, 65, 0.1);
-    height: 1px;
-    margin: 12px 0 9px;
+  &__separator {
+    background: rgba(31, 32, 65, .1);
+    height: .0714rem;
+    margin: .8571em 0 .6428em;
   }
 
   &__id {
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     color: $title-color;
-    line-height: 17px;
+    line-height: 1.2142em;
     white-space: nowrap;
   }
 
   &__decorated-id {
-    font-size: 19px;
+    font-size: 1.3571em;
   }
 
   &__type {
-    font: 12px/15px $basic-font-name;
+    font: .8571rem/1.25em $basic-font-name;
     font-weight: bold;
     text-transform: uppercase;
     color: #BC9CFF;
+    margin-left: .4166em;
   }
 
   &__price {
     color: $basic-color-light;
     white-space: nowrap;
-    font-size: 12px;
-    line-height: 18px;
-    margin-right: -2px;
+    font-size: .8571rem;
+    line-height: 1.5em;
+    margin-right: -0.1666em;
 
     & b {
-      font-size: 14px;
+      font-size: 1.1666em;
     }
   }
 
   &__reviews {
     color: $basic-color-light;
     white-space: nowrap;
-    line-height: 18px;
+    line-height: 1.2857em;
   }
 }
