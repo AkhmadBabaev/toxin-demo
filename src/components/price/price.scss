@@ -1,0 +1,12 @@
+.price {
+  color: $basic-color-light;
+  white-space: nowrap;
+  font-size: .8571rem;
+  line-height: 1.5em;
+  margin-right: -0.1666em;
+
+  &__value {
+    font-size: 1.1666em;
+    font-weight: bold;
+  }
+}

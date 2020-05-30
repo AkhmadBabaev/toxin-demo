@@ -1,4 +1,5 @@
 include ../star-rating/star-rating
+include ../price/price
 
 mixin card-data({ id, reviews = 0, price = 1000, rating = 1, type = "standart" })
   -
@@ -13,9 +14,7 @@ mixin card-data({ id, reviews = 0, price = 1000, rating = 1, type = "standart" }
         if isLuxury
           span(class = `${className}__type`) люкс
 
-      div(class = `${className}__price`)
-        b= `${price}₽ `
-        | в сутки
+      +price({ value: price, text: "в сутки" })
 
     div(class = `${className}__separator`)
 
