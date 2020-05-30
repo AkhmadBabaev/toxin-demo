@@ -1,4 +1,5 @@
 include ../star-rating/star-rating
+include ../card-info/card-info
 include ../price/price
 
 mixin card-data({ id, reviews = 0, price = 1000, rating = 1, type = "standart" })
@@ -8,12 +9,7 @@ mixin card-data({ id, reviews = 0, price = 1000, rating = 1, type = "standart" }
 
   div(class = `${className} js-card-data`)
     div(class = `${className}__header`)
-      div(class = `${className}__id`)
-        | №&nbsp;
-        span(class = `${className}__decorated-id`)= id
-        if isLuxury
-          span(class = `${className}__type`) люкс
-
+      +card-info({ id, type })
       +price({ value: price, text: "в сутки" })
 
     div(class = `${className}__separator`)

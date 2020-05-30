@@ -1,0 +1,9 @@
+mixin card-info({ id, type = "standart" })
+  -
+    const className = "card-info";
+    const isLuxury = type === "luxury";
+
+  div(class = className) №&nbsp;
+    span(class = `${className}__id`)= id
+    if isLuxury
+      span(class = `${className}__type`) люкс

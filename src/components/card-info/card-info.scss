@@ -1,0 +1,19 @@
+.card-info {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  color: $title-color;
+  line-height: 1.2142em;
+  white-space: nowrap;
+
+  &__id {
+    font-size: 1.3571em;
+  }
+
+  &__type {
+    font: .8571rem/1.25em $basic-font-name;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #BC9CFF;
+    margin-left: .4166em;
+  }
+}
