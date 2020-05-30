@@ -1,0 +1,221 @@
+{
+  "cards": [{
+    "id": 888,
+    "price": "9 990",
+    "rating": 5,
+    "reviews": 145,
+    "type": "luxury",
+    "images": [{
+      "url": "./assets/images/image1.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image2.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image3.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image4.jpg",
+      "alt": "description"
+    }]
+  }, {
+    "id": 840,
+    "price": "9 900",
+    "rating": 4,
+    "reviews": 65,
+    "images": [{
+      "url": "./assets/images/image2.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image3.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image4.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image5.jpg",
+      "alt": "description"
+    }]
+  }, {
+    "id": 980,
+    "price": "8 500",
+    "rating": 3,
+    "reviews": 35,
+    "type": "luxury",
+    "images": [{
+      "url": "./assets/images/image3.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image4.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image5.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image6.jpg",
+      "alt": "description"
+    }]
+  }, {
+    "id": 856,
+    "price": "7 300",
+    "rating": 5,
+    "reviews": 19,
+    "images": [{
+      "url": "./assets/images/image4.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image5.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image6.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image7.jpg",
+      "alt": "description"
+    }]
+  }, {
+    "id": 740,
+    "price": "6 000",
+    "rating": 4,
+    "reviews": 44,
+    "images": [{
+      "url": "./assets/images/image5.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image6.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image7.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image8.jpg",
+      "alt": "description"
+    }]
+  }, {
+    "id": 982,
+    "price": "5 800",
+    "rating": 3,
+    "reviews": 56,
+    "images": [{
+      "url": "./assets/images/image6.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image7.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image8.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image9.jpg",
+      "alt": "description"
+    }]
+  }, {
+    "id": 678,
+    "price": "5 500",
+    "rating": 5,
+    "reviews": 45,
+    "images": [{
+      "url": "./assets/images/image7.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image8.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image9.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image10.jpg",
+      "alt": "description"
+    }]
+  }, {
+    "id": 450,
+    "price": "5 300",
+    "rating": 4,
+    "reviews": 39,
+    "images": [{
+      "url": "./assets/images/image8.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image9.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image10.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image11.jpg",
+      "alt": "description"
+    }]
+  }, {
+    "id": 350,
+    "price": "5 000",
+    "rating": 3,
+    "reviews": 77,
+    "images": [{
+      "url": "./assets/images/image9.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image10.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image11.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image12.jpg",
+      "alt": "description"
+    }]
+  }, {
+    "id": 666,
+    "price": "5 000",
+    "rating": 5,
+    "reviews": 25,
+    "images": [{
+      "url": "./assets/images/image10.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image11.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image12.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image1.jpg",
+      "alt": "description"
+    }]
+  }, {
+    "id": 444,
+    "price": "5 000",
+    "rating": 3,
+    "reviews": 15,
+    "images": [{
+      "url": "./assets/images/image11.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image12.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image1.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image2.jpg",
+      "alt": "description"
+    }]
+  }, {
+    "id": 352,
+    "price": "5 500",
+    "rating": 3,
+    "reviews": 55,
+    "images": [{
+      "url": "./assets/images/image12.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image1.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image2.jpg",
+      "alt": "description"
+    }, {
+      "url": "./assets/images/image3.jpg",
+      "alt": "description"
+    }]
+  }]
+}

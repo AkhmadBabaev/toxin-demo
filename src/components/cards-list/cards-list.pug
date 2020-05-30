@@ -1,14 +1,8 @@
 include ../card/card
 
 mixin cards-list({ cards })
-  .cards-list
+  - const className = "cards-list";
+
+  div(class = className)
     each card in cards
-      .cards-list__card
-        +card({
-          id: card.id,
-          price: card.price,
-          rating: card.rating,
-          reviews: card.reviews,
-          type: card.type,
-          images: card.images
-        })
+      +card(card)
