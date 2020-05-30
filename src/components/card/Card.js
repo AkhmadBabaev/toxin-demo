@@ -2,13 +2,12 @@ import CardSlider from '../card-slider/CardSlider';
 
 class Card {
   constructor(element) {
-    this.element = element;
-    this.init();
+    this._init(element);
   }
 
-  init() {
-    const cardSliderElement = this.element.querySelector('.js-card__images-gallery');
-    this.cardSlider = new CardSlider(cardSliderElement.firstElementChild);
+  _init(element) {
+    const cardSliderElement = element.querySelector('.js-card__slider');
+    new CardSlider(cardSliderElement.firstElementChild);
   }
 }
 
