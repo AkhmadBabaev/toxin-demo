@@ -1,0 +1,16 @@
+mixin ui-types(types)
+  - const className = "ui-types";
+
+  div(class = className)
+    div(class = `${className}__wrapper`)
+      each item in types
+        -
+          let leftClass = `${className}__left`;
+          let rightClass = `${className}__right`;
+
+          (item.size === "large" || item.size === "medium" || item.size === "small")
+            && (leftClass += ` ${leftClass}_size_${item.size}`)
+            && (rightClass += ` ${rightClass}_size_${item.size}`)
+
+        div(class = leftClass)= item.left
+        div(class = rightClass) !{item.right}

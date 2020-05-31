@@ -8,5 +8,20 @@
     { "value": "#BC9CFF", "title": "Purple" },
     { "value": "#6FCF97", "title": "Green" }
   ],
-  "types": []
+  "types": [{
+    "left": "H1",
+    "right": "This one is the sub-section or widget title",
+    "size": "large"
+  }, {
+    "left": "H2",
+    "right": "Next one is the item title inside widgets",
+    "size": "medium"
+  }, {
+    "left": "H3",
+    "right": "This is a label or CTA text",
+    "size": "small"
+  }, {
+    "left": "Body",
+    "right": "This is the body text which is used for most<br> of the design, like paragraphs, lists, etc."
+  }]
 }

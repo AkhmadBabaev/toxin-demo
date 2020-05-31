@@ -1,0 +1,42 @@
+@import '../../styles/mixins/headers.scss';
+
+.ui-types {
+  &__wrapper {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto 24rem;
+    grid-gap: 3.57142rem 2.142857rem;
+  }
+
+  &__left  {
+    color: rgba(31, 32, 65, .25);
+    text-align: right;
+    line-height: 1.25;
+
+    &_size_large {
+      font-size: 1.714285rem;
+    }
+
+    &_size_medium {
+      font-size: 1.35714rem;
+    }
+
+    &_size_small {
+      font-size: .85714rem;
+    }
+  }
+
+  &__right {
+    &_size_large {
+      @include h1;
+    }
+
+    &_size_medium {
+      @include h2;
+    }
+
+    &_size_small {
+      @include h3;
+    }
+  }
+}

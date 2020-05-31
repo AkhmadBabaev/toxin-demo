@@ -19,6 +19,7 @@
 
 @import '@components/ui-colors-list/ui-colors-list';
 @import '@components/ui-color/ui-color';
+@import '@components/ui-types/ui-types';
 
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
   Auxiliary
@@ -42,11 +43,16 @@
   &__container {
     @include container;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 5rem;
     justify-content: space-between;
-    flex-wrap: wrap;
     width: 80.5714rem;
     padding-top: 10.3571rem;
     padding-bottom: 10.35715rem;
+
+    @media (min-width: 900px) {
+      grid-template-columns: auto auto;
+    }
   }
 }

@@ -1,6 +1,7 @@
 extends ../../components/layout/layout
 include ../../components/ui-logo/ui-logo
 include ../../components/ui-colors-list/ui-colors-list
+include ../../components/ui-types/ui-types
 
 block append variables
   -
@@ -23,6 +24,7 @@ block body
 
     div(class = `${className}__container`)
       +ui-colors-list(data.colors)
+      +ui-types(data.types)
 
     unless isProdEnv
       script(src = "scripts/colors.bundle.js")
