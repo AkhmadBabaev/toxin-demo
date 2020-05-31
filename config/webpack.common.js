@@ -1,16 +1,19 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const dirs = require('./dirs');
+const generatePages = require('./pages');
 
 module.exports = {
   context: dirs.input.path,
   entry: {
-    index: ['./index', './index.scss'],
+    index: [
+      `./${dirs.pages.name}/index/index`,
+      `./${dirs.pages.name}/index/index.scss`,
+    ],
   },
   output: {
     path: dirs.output.path,
-    filename: '[name].bundle.js',
+    filename: 'scripts/[name].bundle.js',
   },
   module: {
     rules: [
@@ -72,14 +75,7 @@ module.exports = {
     },
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      currentEnv: process.env.NODE_ENV,
-      template: './index.pug',
-      filename: './index.html',
-      inject: false,
-      minify: false,
-      hash: false,
-    }),
+    ...generatePages(),
     new CopyWebpackPlugin([
       { from: '**/{*,.*}', context: dirs.public.path },
       { from: `${dirs.assets.name}/${dirs.fonts.name}`, to: `${dirs.assets.name}/${dirs.fonts.name}` },

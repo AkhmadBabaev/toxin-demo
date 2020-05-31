@@ -1,0 +1,27 @@
+extends ../../components/layout/layout
+include ../../components/cards-list/cards-list
+
+block append variables
+  -
+    const title = "FSD main page";
+    const keywords = "keywords text";
+    const description = "description text";
+
+block append head
+  link(rel = "stylesheet" href = "https://unpkg.com/swiper/css/swiper.min.css")
+
+  if isProdEnv
+    link(rel = "stylesheet" href = "styles/index.bundle.css")
+
+block body
+  -
+    const data = require("./data.json");
+    const className = "cards-page";
+
+  body(class = className)
+    div(class = `${className}__container`)
+      h1(class = `${className}__title`) Номера, которые мы для вас подобрали
+
+      +cards-list({ cards: data.cards })
+
+    script(src = "scripts/index.bundle.js")

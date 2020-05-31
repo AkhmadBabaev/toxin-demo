@@ -1,0 +1,5 @@
+@import '../mixins/fonts';
+
+/* ~ ~ ~ ~ ~ ~ ~   Bold   ~ ~ ~ ~ ~ ~ ~ */
+
+@include font-face('Quicksand', 'Quicksand-Bold', 700);

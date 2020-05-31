@@ -2,6 +2,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const merge = require('webpack-merge');
 
 const common = require('./webpack.common');
+const dirs = require('./dirs');
 
 module.exports = merge(common, {
   mode: 'production',
@@ -24,7 +25,10 @@ module.exports = merge(common, {
       {
         test: /\.(sa|sc)ss$/,
         use: [
-          { loader: MiniCssExtractPlugin.loader },
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: { publicPath: '../' },
+          },
           { loader: 'css-loader' },
           { loader: 'postcss-loader' },
           { loader: 'resolve-url-loader' },
@@ -48,6 +52,6 @@ module.exports = merge(common, {
     builtAt: true,
   },
   plugins: [
-    new MiniCssExtractPlugin({ filename: '[name].bundle.css' }),
+    new MiniCssExtractPlugin({ filename: `${dirs.styles.name}/[name].bundle.css` }),
   ],
 });

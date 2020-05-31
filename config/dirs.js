@@ -46,6 +46,13 @@ class Dirs {
     return { name, path: dirPath };
   }
 
+  get pages() {
+    const name = 'pages';
+    const dirPath = `${this.input.path}/${name}`;
+
+    return { name, path: dirPath };
+  }
+
   get images() {
     const name = 'images';
     const dirPath = path.resolve(this.assets.path, name);
