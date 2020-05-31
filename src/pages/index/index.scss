@@ -52,5 +52,7 @@
 
   &__container {
     @include container;
+
+    width: 61.6rem;
   }
 }

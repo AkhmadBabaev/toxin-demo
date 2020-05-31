@@ -1,5 +1,6 @@
 extends ../../components/layout/layout
 include ../../components/ui-logo/ui-logo
+include ../../components/ui-colors-list/ui-colors-list
 
 block append variables
   -
@@ -19,6 +20,9 @@ block body
   body(class = className)
     div(class = `${className}__logo`)
       +ui-logo
+
+    div(class = `${className}__container`)
+      +ui-colors-list(data.colors)
 
     unless isProdEnv
       script(src = "scripts/colors.bundle.js")

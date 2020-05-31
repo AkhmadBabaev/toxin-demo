@@ -1,4 +1,12 @@
 {
-  "colors": [],
+  "colors": [
+    { "value": "#1F2041", "title": "Dark Shade 100%", "opacity": 100 },
+    { "value": "#1F2041", "title": "Dark Shade 75%", "opacity": 75 },
+    { "value": "#1F2041", "title": "Dark Shade 50%", "opacity": 50 },
+    { "value": "#1F2041", "title": "Dark Shade 25%", "opacity": 25 },
+    { "value": "#1F2041", "title": "Dark Shade 5%", "opacity": 5 },
+    { "value": "#BC9CFF", "title": "Purple" },
+    { "value": "#6FCF97", "title": "Green" }
+  ],
   "types": []
 }

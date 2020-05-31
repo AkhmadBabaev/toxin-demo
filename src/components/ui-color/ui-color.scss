@@ -1,0 +1,23 @@
+.ui-color {
+  display: flex;
+  align-items: center;
+
+  &__box {
+    background: var(--basic-color-darkest);
+    width: 5rem;
+    height: 5rem;
+    border-radius: .4285em;
+  }
+
+  &__description {
+    color: var(--basic-color-darkest);
+    font-family: 'Quicksand', 'Open Sans', sans-serif;
+    font-size: 1.357rem;
+    padding-left: 2.1em;
+    line-height: 1.5;
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+}
