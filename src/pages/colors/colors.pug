@@ -1,4 +1,5 @@
 extends ../../components/layout/layout
+include ../../components/ui-logo/ui-logo
 
 block append variables
   -
@@ -16,6 +17,8 @@ block body
     const className = "colors-page";
 
   body(class = className)
+    div(class = `${className}__logo`)
+      +ui-logo
 
     unless isProdEnv
       script(src = "scripts/colors.bundle.js")

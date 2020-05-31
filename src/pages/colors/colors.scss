@@ -12,3 +12,17 @@
 
 @import '../../styles/variables';
 @import '../../styles/basic';
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+  Styles
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+
+.colors-page {
+  margin: 0;
+
+  &__logo {
+    position: absolute;
+    left: 2.1428rem;
+    top: 2.1428rem;
+  }
+}
