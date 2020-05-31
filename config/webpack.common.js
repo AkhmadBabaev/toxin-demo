@@ -10,6 +10,10 @@ module.exports = {
       `./${dirs.pages.name}/index/index`,
       `./${dirs.pages.name}/index/index.scss`,
     ],
+    colors: [
+      `./${dirs.pages.name}/colors/colors`,
+      `./${dirs.pages.name}/colors/colors.scss`,
+    ],
   },
   output: {
     path: dirs.output.path,

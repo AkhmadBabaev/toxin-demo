@@ -1,0 +1,22 @@
+extends ../../components/layout/layout
+
+block append variables
+  -
+    const title = "FSD UI-Kit: Colors & Types";
+    const keywords = "keywords text";
+    const description = "description text";
+
+block append head
+  if isProdEnv
+    link(rel = "stylesheet" href = "styles/colors.bundle.css")
+
+block body
+  -
+    const data = require("./data.json");
+    const className = "colors-page";
+
+  body(class = className)
+
+    unless isProdEnv
+      script(src = "scripts/colors.bundle.js")
+
