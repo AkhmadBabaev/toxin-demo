@@ -10,7 +10,7 @@ class Dirs {
   }
 
   get output() {
-    const name = 'dist';
+    const name = 'docs';
     const relativeName = `../${name}`;
     const dirPath = path.resolve(__dirname, relativeName);
 
