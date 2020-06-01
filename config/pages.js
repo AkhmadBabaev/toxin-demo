@@ -20,7 +20,6 @@ module.exports = () => {
       template: key,
       filename: `${file.name}.html`,
       inject: false,
-      minify: false,
       hash: false,
     });
   });

@@ -7,6 +7,18 @@ $basic-font-size: 14px;
 /*     Colors
 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 
-$basic-color: rgba(31, 32, 65, .75);
-$basic-color-light: rgba(31, 32, 65, .5);
-$title-color: #1F2041;
+// basic
+$basic-color-value: 31, 32, 65;
+$basic-color-lightest: RGBA($basic-color-value, 5%);
+$basic-color-light: RGBA($basic-color-value, 25%);
+$basic-color: RGBA($basic-color-value, 50%);
+$basic-color-dark: RGBA($basic-color-value, 75%);
+$basic-color-darkest: RGB($basic-color-value);
+
+// primary
+$primary-color-value: 188, 156, 255;
+$primary-color: RGB($primary-color-value);
+
+// secondary
+$secondary-color-value: 111, 207, 151;
+$secondary-color: RGB($secondary-color-value);

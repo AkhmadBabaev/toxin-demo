@@ -8,50 +8,18 @@
     justify-content: space-between;
   }
 
-  &__footer {
-    align-items: center;
-  }
-
   &__separator {
-    background: rgba(31, 32, 65, .1);
+    background: RGBA($basic-color-value, .1);
     height: .0714rem;
     margin: .8571em 0 .6428em;
   }
 
-  &__id {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    color: $title-color;
-    line-height: 1.2142em;
-    white-space: nowrap;
-  }
-
-  &__decorated-id {
-    font-size: 1.3571em;
-  }
-
-  &__type {
-    font: .8571rem/1.25em $basic-font-name;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #BC9CFF;
-    margin-left: .4166em;
-  }
-
-  &__price {
-    color: $basic-color-light;
-    white-space: nowrap;
-    font-size: .8571rem;
-    line-height: 1.5em;
-    margin-right: -0.1666em;
-
-    & b {
-      font-size: 1.1666em;
-    }
+  &__footer {
+    align-items: center;
   }
 
   &__reviews {
-    color: $basic-color-light;
+    color: $basic-color;
     white-space: nowrap;
     line-height: 1.2857em;
   }

@@ -1,4 +1,4 @@
-@import '../../styles/mixins/headers.scss';
+@import '../../styles/mixins/titles';
 
 .ui-types {
   &__wrapper {
@@ -9,7 +9,7 @@
   }
 
   &__left  {
-    color: rgba(31, 32, 65, .25);
+    color: $basic-color-light;
     text-align: right;
     line-height: 1.25;
 

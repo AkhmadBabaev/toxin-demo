@@ -1,7 +1,12 @@
+@mixin hello($margin: 10px, $padding: 5px) {
+  margin: $margin;
+  padding: $padding;
+}
+
 .card-info {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', 'Open Sans' ,sans-serif;
   font-weight: bold;
-  color: $title-color;
+  color: $basic-color-darkest;
   line-height: 1.2142em;
   white-space: nowrap;
 
@@ -10,10 +15,10 @@
   }
 
   &__type {
-    font: .8571rem/1.25em $basic-font-name;
+    font: .8571rem/1.25em $basic-font-name, 'Open Sans', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    color: #BC9CFF;
+    color: $primary-color;
     margin-left: .4166em;
   }
 }
