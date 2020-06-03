@@ -15,7 +15,7 @@ block append head
 
 block body
   -
-    const data = require("./data.json");
+    const { colors, types } = require("./data.json");
     const className = "colors-page";
 
   body(class = className)
@@ -23,8 +23,8 @@ block body
       +ui-logo
 
     div(class = `${className}__container`)
-      +ui-colors-list(data.colors)
-      +ui-types(data.types)
+      +ui-colors-list(colors)
+      +ui-types(types)
 
     unless isProdEnv
       script(src = "scripts/colors.bundle.js")

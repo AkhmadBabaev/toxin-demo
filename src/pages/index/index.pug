@@ -15,13 +15,13 @@ block append head
 
 block body
   -
-    const data = require("./data.json");
+    const { cards } = require("./data.json");
     const className = "cards-page";
 
   body(class = className)
     div(class = `${className}__container`)
       h1(class = `${className}__title`) Номера, которые мы для вас подобрали
 
-      +cards-list({ cards: data.cards })
+      +cards-list(cards)
 
     script(src = "scripts/index.bundle.js")
