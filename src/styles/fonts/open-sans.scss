@@ -1,5 +1,3 @@
 @import '../mixins/fonts';
 
-/* ~ ~ ~ ~ ~ ~ ~   Bold   ~ ~ ~ ~ ~ ~ ~ */
-
-@include font-face('Open Sans', 'OpenSans-Bold', 700, null, null, 'Open-Sans');
+@include font-face('Open Sans', 'open-sans', 'bold', 700);

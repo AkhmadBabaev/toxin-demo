@@ -1,14 +1,13 @@
-@mixin font-face($name, $fileName, $weight: normal, $style: normal, $path: false, $folderName: null) {
-  $fontFolderName: $folderName or $name;
-  $pathToFiles: $path or '../../assets/fonts/#{$fontFolderName}';
+@mixin font-face($name, $folderName, $type, $weight: normal, $style: normal, $path: false) {
+  $pathToFiles: $path or '../../assets/fonts/#{$folderName}';
 
   @font-face {
     font-family: $name;
-    src: url('#{$pathToFiles}/#{$fileName}.eot');
+    src: url('#{$pathToFiles}/#{$folderName}-#{$type}.eot');
     src:
-      url('#{$pathToFiles}/#{$fileName}.woff') format('woff'),
-      url('#{$pathToFiles}/#{$fileName}.ttf') format('truetype'),
-      url('#{$pathToFiles}/#{$fileName}.svg') format('svg');
+      url('#{$pathToFiles}/#{$folderName}-#{$type}.woff') format('woff'),
+      url('#{$pathToFiles}/#{$folderName}-#{$type}.ttf') format('truetype'),
+      url('#{$pathToFiles}/#{$folderName}-#{$type}.svg') format('svg');
     font-weight: $weight;
     font-style: $style;
   }

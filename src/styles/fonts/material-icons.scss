@@ -1,2 +1,3 @@
 @import '../mixins/fonts';
-@include font-face('Material Icons', 'MaterialIcons-Regular', 400, null, null, 'Material-Icons');
+
+@include font-face('Material Icons', 'material-icons', 'regular', 400);
