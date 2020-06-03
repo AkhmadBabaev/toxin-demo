@@ -1,16 +1,25 @@
 mixin ui-text-types(types)
-  - const className = 'ui-text-types';
+  -
+    const className = 'ui-text-types';
+    const typesModifiers = (selector) => ({
+      h1: `${selector}_type_h1`,
+      h2: `${selector}_type_h2`,
+      h3: `${selector}_type_h3`,
+    });
 
   div(class = className)
     div(class = `${className}__wrapper`)
       each item in types
         -
-          let titleClass = `${className}__title`;
-          let contentClass = `${className}__content`;
+          const titleClasses = [
+            `${className}__title`,
+            typesModifiers(`${className}__title`)[item.type],
+          ];
 
-          (item.size === 'large' || item.size === 'medium' || item.size === 'small')
-            && (titleClass += ` ${titleClass}_size_${item.size}`)
-            && (contentClass += ` ${contentClass}_size_${item.size}`)
+          const contentClasses = [
+            `${className}__content`,
+            typesModifiers(`${className}__content`)[item.type],
+          ];
 
-        div(class = titleClass)= item.title
-        div(class = contentClass) !{item.content}
+        div(class = `${titleClasses.join(' ')}`)= item.title
+        div(class = `${contentClasses.join(' ')}`) !{item.content}

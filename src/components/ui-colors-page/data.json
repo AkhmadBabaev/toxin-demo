@@ -11,15 +11,15 @@
   "types": [{
     "title": "H1",
     "content": "This one is the sub-section or widget title",
-    "size": "large"
+    "type": "h1"
   }, {
     "title": "H2",
     "content": "Next one is the item title inside widgets",
-    "size": "medium"
+    "type": "h2"
   }, {
     "title": "H3",
     "content": "This is a label or CTA text",
-    "size": "small"
+    "type": "h3"
   }, {
     "title": "Body",
     "content": "This is the body text which is used for most<br> of the design, like paragraphs, lists, etc."

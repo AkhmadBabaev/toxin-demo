@@ -13,29 +13,29 @@
     text-align: right;
     line-height: 1.25;
 
-    &_size_large {
+    &_type_h1 {
       font-size: 1.714285rem;
     }
 
-    &_size_medium {
+    &_type_h2 {
       font-size: 1.35714rem;
     }
 
-    &_size_small {
+    &_type_h3 {
       font-size: .85714rem;
     }
   }
 
   &__content {
-    &_size_large {
+    &_type_h1 {
       @include h1;
     }
 
-    &_size_medium {
+    &_type_h2 {
       @include h2;
     }
 
-    &_size_small {
+    &_type_h3 {
       @include h3;
     }
   }
