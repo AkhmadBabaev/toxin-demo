@@ -1,0 +1,20 @@
+@import '../../styles/mixins/container';
+@import '../../styles/mixins/titles';
+
+.index-page {
+  margin: 0;
+  padding: 3rem 0;
+
+  &__container {
+    @include container;
+
+    width: 61.6rem;
+  }
+
+  &__title {
+    @include h1;
+
+    margin-top: 0;
+    margin-bottom: .85em;
+  }
+}

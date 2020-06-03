@@ -1,58 +1,11 @@
-/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-  Fonts
-~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
-
 @import '../../styles/fonts/montserrat';
 @import '../../styles/fonts/open-sans';
 @import '../../styles/fonts/quicksand';
 
-/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-  Basic
-~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
-
 @import '../../styles/variables';
 @import '../../styles/basic';
-
-/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-  Components
-~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 
 @import '@components/ui-colors-list/ui-colors-list';
 @import '@components/ui-color/ui-color';
 @import '@components/ui-types/ui-types';
-
-/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-  Auxiliary
-~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
-
-@import '../../styles/mixins/container';
-
-/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-  Styles
-~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
-
-.colors-page {
-  margin: 0;
-
-  &__logo {
-    position: absolute;
-    left: 2.1428rem;
-    top: 2.1428rem;
-  }
-
-  &__container {
-    @include container;
-
-    display: grid;
-    grid-template-columns: auto;
-    row-gap: 5rem;
-    justify-content: space-between;
-    width: 80.5714rem;
-    padding-top: 10.3571rem;
-    padding-bottom: 10.35715rem;
-
-    @media (min-width: 900px) {
-      grid-template-columns: auto auto;
-    }
-  }
-}
+@import '@components/ui-colors-page/ui-colors-page';

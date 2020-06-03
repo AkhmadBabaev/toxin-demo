@@ -1,7 +1,5 @@
 extends ../../components/layout/layout
-include ../../components/ui-logo/ui-logo
-include ../../components/ui-colors-list/ui-colors-list
-include ../../components/ui-types/ui-types
+include ../../components/ui-colors-page/ui-colors-page
 
 block append variables
   -
@@ -14,18 +12,5 @@ block append head
     link(rel = "stylesheet" href = "styles/colors.bundle.css")
 
 block body
-  -
-    const { colors, types } = require("./data.json");
-    const className = "colors-page";
-
-  body(class = className)
-    div(class = `${className}__logo`)
-      +ui-logo
-
-    div(class = `${className}__container`)
-      +ui-colors-list(colors)
-      +ui-types(types)
-
-    unless isProdEnv
-      script(src = "scripts/colors.bundle.js")
+  +ui-colors-page
 

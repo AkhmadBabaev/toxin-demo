@@ -1,0 +1,14 @@
+include ../cards-list/cards-list
+
+mixin index-page
+  -
+    const { cards } = require("@components/index-page/data.json");
+    const className = "index-page";
+
+  body(class = className)
+    div(class = `${className}__container`)
+      h1(class = `${className}__title`) Номера, которые мы для вас подобрали
+
+      +cards-list(cards)
+
+    script(src = "scripts/index.bundle.js")

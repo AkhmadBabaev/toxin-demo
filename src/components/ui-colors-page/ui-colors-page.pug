@@ -1,0 +1,19 @@
+include ../ui-colors-list/ui-colors-list
+include ../ui-logo/ui-logo
+include ../ui-types/ui-types
+
+mixin ui-colors-page
+  -
+    const { colors, types } = require("@components/ui-colors-page/data.json");
+    const className = "ui-colors-page";
+
+  body(class = className)
+    div(class = `${className}__logo`)
+      +ui-logo
+
+    div(class = `${className}__container`)
+      +ui-colors-list(colors)
+      +ui-types(types)
+
+    unless isProdEnv
+      script(src = "scripts/colors.bundle.js")

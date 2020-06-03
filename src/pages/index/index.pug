@@ -1,5 +1,5 @@
 extends ../../components/layout/layout
-include ../../components/cards-list/cards-list
+include ../../components/index-page/index-page
 
 block append variables
   -
@@ -12,14 +12,4 @@ block append head
     link(rel = "stylesheet" href = "styles/index.bundle.css")
 
 block body
-  -
-    const { cards } = require("./data.json");
-    const className = "cards-page";
-
-  body(class = className)
-    div(class = `${className}__container`)
-      h1(class = `${className}__title`) Номера, которые мы для вас подобрали
-
-      +cards-list(cards)
-
-    script(src = "scripts/index.bundle.js")
+  +index-page
