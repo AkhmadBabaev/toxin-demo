@@ -1,8 +1,3 @@
-@mixin hello($margin: 10px, $padding: 5px) {
-  margin: $margin;
-  padding: $padding;
-}
-
 .card-info {
   font-family: 'Quicksand', 'Open Sans' ,sans-serif;
   font-weight: bold;
