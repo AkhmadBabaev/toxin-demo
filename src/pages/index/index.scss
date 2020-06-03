@@ -1,10 +1,10 @@
-@import '../../styles/fonts/material-icons';
-@import '../../styles/fonts/montserrat';
-@import '../../styles/fonts/open-sans';
-@import '../../styles/fonts/quicksand';
+@import '../../auxiliary/styles/fonts/material-icons';
+@import '../../auxiliary/styles/fonts/montserrat';
+@import '../../auxiliary/styles/fonts/open-sans';
+@import '../../auxiliary/styles/fonts/quicksand';
 
-@import '../../styles/variables';
-@import '../../styles/basic';
+@import '../../auxiliary/styles/variables';
+@import '../../auxiliary/styles/basic';
 
 @import '@components/cards-list/cards-list';
 @import '@components/card/card';

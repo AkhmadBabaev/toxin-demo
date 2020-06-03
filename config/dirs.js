@@ -32,6 +32,13 @@ class Dirs {
     return { name, path: dirPath };
   }
 
+  get auxiliary() {
+    const name = 'auxiliary';
+    const dirPath = `${this.input.path}/${name}`;
+
+    return { name, path: dirPath };
+  }
+
   get components() {
     const name = 'components';
     const dirPath = path.resolve(this.input.path, name);
@@ -41,7 +48,7 @@ class Dirs {
 
   get styles() {
     const name = 'styles';
-    const dirPath = `${this.input.path}/${name}`;
+    const dirPath = `${this.auxiliary.path}/${name}`;
 
     return { name, path: dirPath };
   }
