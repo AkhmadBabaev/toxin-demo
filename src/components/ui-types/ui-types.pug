@@ -1,5 +1,5 @@
 mixin ui-types(types)
-  - const className = "ui-types";
+  - const className = 'ui-types';
 
   div(class = className)
     div(class = `${className}__wrapper`)
@@ -8,7 +8,7 @@ mixin ui-types(types)
           let leftClass = `${className}__left`;
           let rightClass = `${className}__right`;
 
-          (item.size === "large" || item.size === "medium" || item.size === "small")
+          (item.size === 'large' || item.size === 'medium' || item.size === 'small')
             && (leftClass += ` ${leftClass}_size_${item.size}`)
             && (rightClass += ` ${rightClass}_size_${item.size}`)
 

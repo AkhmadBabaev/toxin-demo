@@ -1,5 +1,5 @@
-mixin price({ value = 0, currency = "₽", text = "" })
-  - const className = "price";
+mixin price({ value = 0, currency = '₽', text = '' })
+  - const className = 'price';
 
   div(class = className)
     span(class = `${className}__value`)= `${value}${currency}`

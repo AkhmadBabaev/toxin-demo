@@ -1,8 +1,8 @@
 include ../card-data/card-data
 include ../card-slider/card-slider
 
-mixin card({ id, reviews = 0, price = 1000, rating = 1, images, type = "standart" })
-  - const className = "card";
+mixin card({ id, reviews = 0, price = 1000, rating = 1, images, type = 'standart' })
+  - const className = 'card';
 
   div(class = `${className} js-card`)
     div(class = "js-card__slider")

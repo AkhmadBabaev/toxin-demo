@@ -2,15 +2,15 @@ include ../star-rating/star-rating
 include ../card-info/card-info
 include ../price/price
 
-mixin card-data({ id, reviews = 0, price = 1000, rating = 1, type = "standart" })
+mixin card-data({ id, reviews = 0, price = 1000, rating = 1, type = 'standart' })
   -
-    const className = "card-data";
-    const isLuxury = type === "luxury";
+    const className = 'card-data';
+    const isLuxury = type === 'luxury';
 
   div(class = `${className} js-card-data`)
     div(class = `${className}__header`)
       +card-info({ id, type })
-      +price({ value: price, text: "в сутки" })
+      +price({ value: price, text: 'в сутки' })
 
     div(class = `${className}__separator`)
 
