@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const glob = require('glob');
 
 const dirs = require('./dirs');
-const { parseFile } = require('./files');
+const { parseFile } = require('./utils');
 
 /**
  * Generates HTML pages using the HtmlWebpackPlugin.
