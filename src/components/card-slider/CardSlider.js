@@ -8,9 +8,13 @@ class CardSlider {
   _init(element) {
     new Swiper(element, {
       loop: true,
-      lazy: true,
+      lazy: {
+        elementClass: 'card-slider__slide-img',
+      },
       pagination: {
         el: '.card-slider__pagination',
+        bulletClass: 'card-slider__pagination-bullet',
+        bulletActiveClass: 'card-slider__pagination-bullet_activated',
       },
       navigation: {
         nextEl: '.card-slider__button-next',

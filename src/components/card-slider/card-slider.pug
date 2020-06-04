@@ -6,10 +6,9 @@ mixin card-slider({ images })
     div(class = "swiper-wrapper")
       each image in images
         div(class = `${className}__slide swiper-slide`)
-          img(class = `${className}__slide-img swiper-lazy` src = image.url alt = image.alt)
-          div(class = "swiper-lazy-preloader swiper-lazy-preloader-white")
+          img(class = `${className}__slide-img` src = image.url alt = image.alt)
 
     div(class = `${className}__button-prev`)
     div(class = `${className}__button-next`)
-    div(class = `${className}__pagination swiper-pagination`)
+    div(class = `${className}__pagination`)
 

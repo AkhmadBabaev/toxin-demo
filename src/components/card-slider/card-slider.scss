@@ -55,17 +55,19 @@
     opacity: 1;
   }
 
-  &__pagination.swiper-pagination {
+  & &__pagination {
     text-align: right;
     width: auto;
     padding: 0 1.1em;
     box-sizing: border-box;
+    position: absolute;
+    z-index: 10;
     left: unset;
     right: 0;
     bottom: .5rem;
     pointer-events: none;
 
-    & .swiper-pagination-bullet {
+    &-bullet {
       background-color: transparent;
       width: .54rem;
       height: .54rem;
@@ -74,9 +76,10 @@
       box-sizing: border-box;
       opacity: 1;
       box-shadow: 0 .4em .4em RGBA($basic-color-value, .3);
-      position: relative;
+      display: inline-block;
+      border-radius: 50%;
 
-      &-active {
+      &_activated {
         background-color: #fff;
       }
     }
