@@ -2,11 +2,11 @@
   color: $basic-color;
   white-space: nowrap;
   font-size: .8571rem;
-  line-height: 1.5em;
-  margin-right: -0.1666em;
+  line-height: 1.2857;
+  margin-right: -0.14285rem;
 
   &__value {
-    font-size: 1.1666em;
+    font-size: 1rem;
     font-weight: bold;
   }
 }

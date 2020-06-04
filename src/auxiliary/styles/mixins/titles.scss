@@ -8,7 +8,7 @@
 
   font-family: 'Quicksand', 'Open Sans', sans-serif;
   font-size: 1.714285rem;
-  line-height: 1.25em;
+  line-height: 1.25;
 }
 
 @mixin h2 {
@@ -16,7 +16,7 @@
 
   font-family: 'Quicksand', 'Open Sans', sans-serif;
   font-size: 1.35714rem;
-  line-height: 1.2631em;
+  line-height: 1.2631;
 }
 
 @mixin h3 {
@@ -24,6 +24,6 @@
 
   font-family: 'Montserrat', 'Open Sans', sans-serif;
   font-size: .85714rem;
-  line-height: 1.25em;
+  line-height: 1.25;
   text-transform: uppercase;
 }

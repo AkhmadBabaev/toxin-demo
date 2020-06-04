@@ -2,18 +2,18 @@
   font-family: 'Quicksand', 'Open Sans' ,sans-serif;
   font-weight: bold;
   color: $basic-color-darkest;
-  line-height: 1.2142em;
+  line-height: 1.2142rem;
   white-space: nowrap;
 
   &__id {
-    font-size: 1.3571em;
+    font-size: 1.3571rem;
   }
 
   &__type {
-    font: .8571rem/1.25em $basic-font-name, 'Open Sans', sans-serif;
+    font: .8571rem/1rem $basic-font-name, 'Open Sans', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     color: $primary-color;
-    margin-left: .4166em;
+    margin-left: .35rem;
   }
 }

@@ -58,24 +58,24 @@
   & &__pagination {
     text-align: right;
     width: auto;
-    padding: 0 1.1em;
+    padding: 0 1.1rem;
     box-sizing: border-box;
     position: absolute;
     z-index: 10;
     left: unset;
     right: 0;
-    bottom: .5rem;
+    bottom: .6rem;
     pointer-events: none;
 
     &-bullet {
       background-color: transparent;
       width: .54rem;
       height: .54rem;
-      border: .0714em solid #fff;
-      margin: 0 0 0 .26em;
+      border: .0714rem solid #fff;
+      margin: 0 0 0 .26rem;
       box-sizing: border-box;
       opacity: 1;
-      box-shadow: 0 .4em .4em RGBA($basic-color-value, .3);
+      box-shadow: 0 .4rem .4rem RGBA($basic-color-value, .3);
       display: inline-block;
       border-radius: 50%;
 

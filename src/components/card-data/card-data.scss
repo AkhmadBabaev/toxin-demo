@@ -1,5 +1,5 @@
 .card-data {
-  padding: 1.6428em 1.4285em 1.2857em;
+  padding: 1.6428rem 1.4285rem 1.2857rem;
   background-color: #fff;
 
   &__header,
@@ -11,7 +11,7 @@
   &__separator {
     background: RGBA($basic-color-value, .1);
     height: .0714rem;
-    margin: .8571em 0 .6428em;
+    margin: .8571rem 0 .6428rem;
   }
 
   &__footer {
@@ -21,6 +21,6 @@
   &__reviews {
     color: $basic-color;
     white-space: nowrap;
-    line-height: 1.2857em;
+    line-height: 1.2857rem;
   }
 }
