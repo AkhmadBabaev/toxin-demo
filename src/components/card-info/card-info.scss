@@ -2,7 +2,7 @@
   font-family: 'Quicksand', 'Open Sans' ,sans-serif;
   font-weight: bold;
   color: $basic-color-darkest;
-  line-height: 1.2142rem;
+  line-height: 1;
   white-space: nowrap;
 
   &__id {
@@ -10,7 +10,7 @@
   }
 
   &__type {
-    font: .8571rem/1rem $basic-font-name, 'Open Sans', sans-serif;
+    font: .8571rem/1 $basic-font-name, 'Open Sans', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     color: $primary-color;
