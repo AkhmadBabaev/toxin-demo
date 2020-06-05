@@ -10,15 +10,17 @@ mixin ui-text-types(types)
     .ui-text-types__wrapper
       each item in types
         -
+          const { type, title, content } = item;
+
           const titleClasses = [
             'ui-text-types__title',
-            typesModifiers('ui-text-types__title')[item.type],
+            typesModifiers('ui-text-types__title')[type],
           ];
 
           const contentClasses = [
             'ui-text-types__content',
-            typesModifiers('ui-text-types__content')[item.type],
+            typesModifiers('ui-text-types__content')[type],
           ];
 
-        div(class = titleClasses)= item.title
-        div(class = contentClasses) !{item.content}
+        div(class = titleClasses)= title
+        div(class = contentClasses) !{content}
