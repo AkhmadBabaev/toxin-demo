@@ -6,15 +6,17 @@ mixin ui-text-types(types)
       h3: `${selector}_type_h3`,
     });
 
-  .ui-text-types
-    .ui-text-types__wrapper
+  section.ui-text-types
+    h2.ui-text-types__title Вариации текста
+
+    .ui-text-types__wrapper(lang = "en")
       each item in types
         -
-          const { type, title, content } = item;
+          const { type, head, content } = item;
 
-          const titleClasses = [
-            'ui-text-types__title',
-            typesModifiers('ui-text-types__title')[type],
+          const headClasses = [
+            'ui-text-types__head',
+            typesModifiers('ui-text-types__head')[type],
           ];
 
           const contentClasses = [
@@ -22,5 +24,5 @@ mixin ui-text-types(types)
             typesModifiers('ui-text-types__content')[type],
           ];
 
-        div(class = titleClasses)= title
+        div(class = headClasses)= head
         div(class = contentClasses) !{content}

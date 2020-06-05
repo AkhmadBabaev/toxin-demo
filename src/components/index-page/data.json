@@ -7,16 +7,16 @@
     "type": "luxury",
     "images": [{
       "url": "./assets/images/image1.jpg",
-      "alt": "description"
+      "alt": "room number 1"
     }, {
       "url": "./assets/images/image2.jpg",
-      "alt": "description"
+      "alt": "room number 2"
     }, {
       "url": "./assets/images/image3.jpg",
-      "alt": "description"
+      "alt": "room number 3"
     }, {
       "url": "./assets/images/image4.jpg",
-      "alt": "description"
+      "alt": "room number 4"
     }]
   }, {
     "id": 840,
@@ -25,16 +25,16 @@
     "reviews": 65,
     "images": [{
       "url": "./assets/images/image2.jpg",
-      "alt": "description"
+      "alt": "room number 2"
     }, {
       "url": "./assets/images/image3.jpg",
-      "alt": "description"
+      "alt": "room number 3"
     }, {
       "url": "./assets/images/image4.jpg",
-      "alt": "description"
+      "alt": "room number 4"
     }, {
       "url": "./assets/images/image5.jpg",
-      "alt": "description"
+      "alt": "room number 5"
     }]
   }, {
     "id": 980,
@@ -44,16 +44,16 @@
     "type": "luxury",
     "images": [{
       "url": "./assets/images/image3.jpg",
-      "alt": "description"
+      "alt": "room number 3"
     }, {
       "url": "./assets/images/image4.jpg",
-      "alt": "description"
+      "alt": "room number 4"
     }, {
       "url": "./assets/images/image5.jpg",
-      "alt": "description"
+      "alt": "room number 5"
     }, {
       "url": "./assets/images/image6.jpg",
-      "alt": "description"
+      "alt": "room number 6"
     }]
   }, {
     "id": 856,
@@ -62,16 +62,16 @@
     "reviews": 19,
     "images": [{
       "url": "./assets/images/image4.jpg",
-      "alt": "description"
+      "alt": "room number 4"
     }, {
       "url": "./assets/images/image5.jpg",
-      "alt": "description"
+      "alt": "room number 5"
     }, {
       "url": "./assets/images/image6.jpg",
-      "alt": "description"
+      "alt": "room number 6"
     }, {
       "url": "./assets/images/image7.jpg",
-      "alt": "description"
+      "alt": "room number 7"
     }]
   }, {
     "id": 740,
@@ -80,16 +80,16 @@
     "reviews": 44,
     "images": [{
       "url": "./assets/images/image5.jpg",
-      "alt": "description"
+      "alt": "room number 5"
     }, {
       "url": "./assets/images/image6.jpg",
-      "alt": "description"
+      "alt": "room number 6"
     }, {
       "url": "./assets/images/image7.jpg",
-      "alt": "description"
+      "alt": "room number 7"
     }, {
       "url": "./assets/images/image8.jpg",
-      "alt": "description"
+      "alt": "room number 8"
     }]
   }, {
     "id": 982,
@@ -98,16 +98,16 @@
     "reviews": 56,
     "images": [{
       "url": "./assets/images/image6.jpg",
-      "alt": "description"
+      "alt": "room number 6"
     }, {
       "url": "./assets/images/image7.jpg",
-      "alt": "description"
+      "alt": "room number 7"
     }, {
       "url": "./assets/images/image8.jpg",
-      "alt": "description"
+      "alt": "room number 8"
     }, {
       "url": "./assets/images/image9.jpg",
-      "alt": "description"
+      "alt": "room number 9"
     }]
   }, {
     "id": 678,
@@ -116,16 +116,16 @@
     "reviews": 45,
     "images": [{
       "url": "./assets/images/image7.jpg",
-      "alt": "description"
+      "alt": "room number 7"
     }, {
       "url": "./assets/images/image8.jpg",
-      "alt": "description"
+      "alt": "room number 8"
     }, {
       "url": "./assets/images/image9.jpg",
-      "alt": "description"
+      "alt": "room number 9"
     }, {
       "url": "./assets/images/image10.jpg",
-      "alt": "description"
+      "alt": "room number 10"
     }]
   }, {
     "id": 450,
@@ -134,16 +134,16 @@
     "reviews": 39,
     "images": [{
       "url": "./assets/images/image8.jpg",
-      "alt": "description"
+      "alt": "room number 8"
     }, {
       "url": "./assets/images/image9.jpg",
-      "alt": "description"
+      "alt": "room number 9"
     }, {
       "url": "./assets/images/image10.jpg",
-      "alt": "description"
+      "alt": "room number 10"
     }, {
       "url": "./assets/images/image11.jpg",
-      "alt": "description"
+      "alt": "room number 11"
     }]
   }, {
     "id": 350,
@@ -152,16 +152,16 @@
     "reviews": 77,
     "images": [{
       "url": "./assets/images/image9.jpg",
-      "alt": "description"
+      "alt": "room number 9"
     }, {
       "url": "./assets/images/image10.jpg",
-      "alt": "description"
+      "alt": "room number 10"
     }, {
       "url": "./assets/images/image11.jpg",
-      "alt": "description"
+      "alt": "room number 11"
     }, {
       "url": "./assets/images/image12.jpg",
-      "alt": "description"
+      "alt": "room number 12"
     }]
   }, {
     "id": 666,
@@ -170,16 +170,16 @@
     "reviews": 25,
     "images": [{
       "url": "./assets/images/image10.jpg",
-      "alt": "description"
+      "alt": "room number 10"
     }, {
       "url": "./assets/images/image11.jpg",
-      "alt": "description"
+      "alt": "room number 11"
     }, {
       "url": "./assets/images/image12.jpg",
-      "alt": "description"
+      "alt": "room number 12"
     }, {
       "url": "./assets/images/image1.jpg",
-      "alt": "description"
+      "alt": "room number 1"
     }]
   }, {
     "id": 444,
@@ -188,16 +188,16 @@
     "reviews": 15,
     "images": [{
       "url": "./assets/images/image11.jpg",
-      "alt": "description"
+      "alt": "room number 11"
     }, {
       "url": "./assets/images/image12.jpg",
-      "alt": "description"
+      "alt": "room number 12"
     }, {
       "url": "./assets/images/image1.jpg",
-      "alt": "description"
+      "alt": "room number 1"
     }, {
       "url": "./assets/images/image2.jpg",
-      "alt": "description"
+      "alt": "room number 2"
     }]
   }, {
     "id": 352,
@@ -206,16 +206,16 @@
     "reviews": 55,
     "images": [{
       "url": "./assets/images/image12.jpg",
-      "alt": "description"
+      "alt": "room number 12"
     }, {
       "url": "./assets/images/image1.jpg",
-      "alt": "description"
+      "alt": "room number 1"
     }, {
       "url": "./assets/images/image2.jpg",
-      "alt": "description"
+      "alt": "room number 2"
     }, {
       "url": "./assets/images/image3.jpg",
-      "alt": "description"
+      "alt": "room number 3"
     }]
   }]
 }

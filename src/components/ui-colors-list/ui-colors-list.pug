@@ -1,7 +1,10 @@
 include ../ui-color/ui-color
 
 mixin ui-colors-list(colors)
-  .ui-colors-list
-    each color in colors
-      .ui-colors-list__color
-        +ui-color(color)
+  section.ui-colors-list
+    h2.ui-colors-list__title Цветовая палитра
+
+    ul.ui-colors-list__body(lang = "en")
+      each color in colors
+        li.ui-colors-list__color
+          +ui-color(color)

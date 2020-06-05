@@ -1,6 +1,11 @@
 @import '../../auxiliary/styles/mixins/titles';
+@import '../../auxiliary/styles/mixins/visually-hidden';
 
 .ui-text-types {
+  &__title {
+    @include visually-hidden;
+  }
+
   &__wrapper {
     display: grid;
     grid-template-rows: auto;
@@ -8,7 +13,7 @@
     grid-gap: 3.57142rem 2.142857rem;
   }
 
-  &__title  {
+  &__head  {
     color: $basic-color-light;
     text-align: right;
     line-height: 1.25;

@@ -4,7 +4,7 @@ mixin index-page
   - const { cards } = require('@components/index-page/data.json');
 
   body.index-page
-    .index-page__container
+    main.index-page__container
       h1.index-page__title Номера, которые мы для вас подобрали
 
       +cards-list(cards)

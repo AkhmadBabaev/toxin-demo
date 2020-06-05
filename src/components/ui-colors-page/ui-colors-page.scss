@@ -1,4 +1,5 @@
 @import '../../auxiliary/styles/mixins/container';
+@import '../../auxiliary/styles/mixins/visually-hidden';
 
 .ui-colors-page {
   margin: 0;
@@ -7,6 +8,10 @@
     position: absolute;
     left: 2.1428rem;
     top: 2.1428rem;
+  }
+
+  &__title {
+    @include visually-hidden;
   }
 
   &__container {

@@ -1,4 +1,15 @@
+@import '../../auxiliary/styles/mixins/visually-hidden';
+
 .ui-colors-list {
+  &__title {
+    @include visually-hidden;
+  }
+
+  &__body {
+    padding-left: 0;
+    list-style: none;
+  }
+
   &__color + &__color {
     margin-top: 1.428rem;
   }

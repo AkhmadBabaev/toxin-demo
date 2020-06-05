@@ -9,19 +9,19 @@
     { "value": "#6FCF97", "title": "Green" }
   ],
   "types": [{
-    "title": "H1",
+    "head": "H1",
     "content": "This one is the sub-section or widget title",
     "type": "h1"
   }, {
-    "title": "H2",
+    "head": "H2",
     "content": "Next one is the item title inside widgets",
     "type": "h2"
   }, {
-    "title": "H3",
+    "head": "H3",
     "content": "This is a label or CTA text",
     "type": "h3"
   }, {
-    "title": "Body",
+    "head": "Body",
     "content": "This is the body text which is used for most<br> of the design, like paragraphs, lists, etc."
   }]
 }

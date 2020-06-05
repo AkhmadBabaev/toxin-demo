@@ -6,12 +6,15 @@ mixin ui-colors-page
   - const { colors, types } = require('@components/ui-colors-page/data.json');
 
   body.ui-colors-page
-    .ui-colors-page__logo
-      +ui-logo
+    main.ui-colors__inner
+      .ui-colors-page__logo
+        +ui-logo
 
-    .ui-colors-page__container
-      +ui-colors-list(colors)
-      +ui-text-types(types)
+      h1.ui-colors-page__title Цветовая палитра и вариации текста
+
+      .ui-colors-page__container
+        +ui-colors-list(colors)
+        +ui-text-types(types)
 
     unless isProdEnv
       script(src = "scripts/colors.bundle.js")
