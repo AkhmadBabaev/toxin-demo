@@ -3,7 +3,5 @@ include ../card-slider/card-slider
 
 mixin card({ id, reviews = 0, price = 1000, rating = 1, images, type = 'standart' })
   .card.js-card
-    .js-card__slider
-      +card-slider({ images })
-
+    +card-slider({ images })
     +card-data({ id, reviews, price, rating, type })
