@@ -3,18 +3,16 @@ include ../card-info/card-info
 include ../price/price
 
 mixin card-data({ id, reviews = 0, price = 1000, rating = 1, type = 'standart' })
-  - const className = 'card-data';
-
-  div(class = `${className} js-card-data`)
-    div(class = `${className}__header`)
+  .card-data.js-card-data
+    .card-data__header
       +card-info({ id, type })
       +price({ value: price, text: 'в сутки' })
 
-    div(class = `${className}__separator`)
+    .card-data__separator
 
-    div(class = `${className}__footer`)
+    .card-data__footer
       +star-rating({ rating })
 
-      div(class = `${className}__reviews`)
+      .card-data__reviews
         b= reviews
         | &nbsp;Отзывов

@@ -1,14 +1,12 @@
 mixin card-slider({ images })
-  - const className = 'card-slider';
+  .card-slider.js-card-slider.swiper-container
 
-  div(class = `${className} js-card-slider swiper-container`)
-
-    div(class = "swiper-wrapper")
+    .swiper-wrapper
       each image in images
-        div(class = `${className}__slide swiper-slide`)
-          img(class = `${className}__slide-img` src = image.url alt = image.alt)
+        .card-slider__slide.swiper-slide
+          img.card-slider__slide-img(src = image.url alt = image.alt)
 
-    div(class = `${className}__button-prev`)
-    div(class = `${className}__button-next`)
-    div(class = `${className}__pagination`)
+    .card-slider__button-prev
+    .card-slider__button-next
+    .card-slider__pagination
 

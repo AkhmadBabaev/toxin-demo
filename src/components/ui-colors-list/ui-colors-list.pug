@@ -1,9 +1,7 @@
 include ../ui-color/ui-color
 
 mixin ui-colors-list(colors)
-  - const className = 'ui-colors-list';
-
-  div(class = className)
+  .ui-colors-list
     each color in colors
-      div(class = `${className}__color`)
+      .ui-colors-list__color
         +ui-color(color)

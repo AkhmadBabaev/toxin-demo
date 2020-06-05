@@ -1,13 +1,11 @@
 include ../cards-list/cards-list
 
 mixin index-page
-  -
-    const { cards } = require('@components/index-page/data.json');
-    const className = 'index-page';
+  - const { cards } = require('@components/index-page/data.json');
 
-  body(class = className)
-    div(class = `${className}__container`)
-      h1(class = `${className}__title`) Номера, которые мы для вас подобрали
+  body.index-page
+    .index-page__container
+      h1.index-page__title Номера, которые мы для вас подобрали
 
       +cards-list(cards)
 

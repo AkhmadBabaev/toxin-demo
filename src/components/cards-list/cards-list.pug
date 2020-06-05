@@ -1,8 +1,6 @@
 include ../card/card
 
 mixin cards-list(cards)
-  - const className = 'cards-list';
-
-  div(class = className)
+  .cards-list
     each card in cards
       +card(card)

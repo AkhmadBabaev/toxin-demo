@@ -1,11 +1,6 @@
 mixin ui-color({ title = '', value, opacity = 100 })
-  - const className = 'ui-color';
-
-  div(class = className)
-    div(
-      class = `${className}__box`
-      style = `opacity: ${opacity/100}; background: ${value}`
-    )
-    div(class = `${className}__description`)
-      div(class = `${className}__title`)= title
-      div(class = `${className}__value`)= value
+  .ui-color
+    .ui-color__box(style = `opacity: ${opacity/100}; background: ${value}`)
+    .ui-color__description
+      .ui-color__title= title
+      .ui-color__value= value

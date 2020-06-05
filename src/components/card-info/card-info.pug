@@ -1,9 +1,7 @@
 mixin card-info({ id, type = 'standart' })
-  -
-    const className = 'card-info';
-    const isLuxury = type === 'luxury';
+  - const isLuxury = type === 'luxury';
 
-  div(class = className) №&nbsp;
-    span(class = `${className}__id`)= id
+  .card-info №&nbsp;
+    span.card-info__id= id
     if isLuxury
-      span(class = `${className}__type`) люкс
+      span.card-info__type люкс
