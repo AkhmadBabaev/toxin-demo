@@ -20,5 +20,5 @@ mixin ui-text-types(types)
             typesModifiers('ui-text-types__content')[item.type],
           ];
 
-        div(class = `${titleClasses.join(' ')}`)= item.title
-        div(class = `${contentClasses.join(' ')}`) !{item.content}
+        div(class = titleClasses)= item.title
+        div(class = contentClasses) !{item.content}
