@@ -3,9 +3,7 @@ include ../card-info/card-info
 include ../price/price
 
 mixin card-data({ id, reviews = 0, price = 1000, rating = 1, type = 'standart' })
-  -
-    const className = 'card-data';
-    const isLuxury = type === 'luxury';
+  - const className = 'card-data';
 
   div(class = `${className} js-card-data`)
     div(class = `${className}__header`)
@@ -19,4 +17,4 @@ mixin card-data({ id, reviews = 0, price = 1000, rating = 1, type = 'standart' }
 
       div(class = `${className}__reviews`)
         b= reviews
-        |  Отзывов
+        | &nbsp;Отзывов

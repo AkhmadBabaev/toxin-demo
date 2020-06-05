@@ -2,6 +2,7 @@ mixin star-rating({ rating = 1, max = 5 } = {})
   -
     const className = 'star-rating';
     const starClasses = `${className}__star js-star-rating__star`;
+    const activatedStarClass = `${className}__star_activated`;
     let count = 0;
 
   div(class = `${className} js-star-rating`)
@@ -9,7 +10,7 @@ mixin star-rating({ rating = 1, max = 5 } = {})
       - count += 1;
 
       div(
-        class = (count !== rating) ? starClasses : `${starClasses} ${className}__star_activated`
+        class = (count !== rating) ? starClasses : `${starClasses} ${activatedStarClass}`
         tabindex = 0
         data-index = count
       )
