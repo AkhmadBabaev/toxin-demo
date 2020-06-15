@@ -2,7 +2,7 @@
 ============
 
 Тестовое задание компании FSD.
-Страницы: [Cards](https://akhmadbabaev.github.io/fsd-landing/), [Colors & Types](https://akhmadbabaev.github.io/fsd-landing/colors.html).
+[Главная страница](https://akhmadbabaev.github.io/fsd-landing/).
 
 ## 🏷️ Содержание
 
