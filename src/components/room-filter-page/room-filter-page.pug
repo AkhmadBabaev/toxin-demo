@@ -1,0 +1,12 @@
+include ../cards-list/cards-list
+
+mixin room-filter-page
+  - const { cards } = require('@components/room-filter-page/data.json');
+
+  body.room-filter-page
+    main.room-filter-page__container
+      h1.room-filter-page__title Номера, которые мы для вас подобрали
+
+      +cards-list(cards)
+
+    script(src = "scripts/room-filter.bundle.js")

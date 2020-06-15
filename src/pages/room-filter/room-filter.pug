@@ -1,0 +1,15 @@
+extends ../../assets/markup/layouts/main
+include ../../components/room-filter-page/room-filter-page
+
+block append variables
+  -
+    const title = 'Toxin: Room filter';
+    const keywords = 'отель, бронирование номеров, toxin отель, номера отеля';
+    const description = 'Бронирование номеров отеля Toxin';
+
+block append head
+  if isProdEnv
+    link(rel = "stylesheet" href = "styles/room-filter.bundle.css")
+
+block body
+  +room-filter-page
