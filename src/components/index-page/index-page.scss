@@ -1,0 +1,51 @@
+@import '../../assets/styles/mixins/container';
+@import '../../assets/styles/mixins/titles';
+
+.index-page {
+  margin: 0;
+
+  &__container {
+    @include container;
+
+    width: 80.5714rem;
+    padding-top: 10.3571rem;
+    padding-bottom: 10.35715rem;
+  }
+
+  &__title {
+    @include h1;
+
+    margin-top: 0;
+    text-align: center;
+  }
+
+  &__navigation {
+    text-align: center;
+
+    &-list {
+      padding-top: 1rem;
+      padding-left: 0;
+      margin-top: 0;
+      list-style: none;
+    }
+
+    &-item {
+      & + & {
+        margin-top: 1rem;
+      }
+    }
+
+    &-link {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:focus {
+        outline: none;
+        text-decoration: underline;
+      }
+    }
+  }
+}

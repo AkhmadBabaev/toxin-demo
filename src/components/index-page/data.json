@@ -1,0 +1,6 @@
+{
+  "navigation": [
+    { "name": "Colors & Types", "url": "./colors.html" },
+    { "name": "Room filter", "url": "./room-filter.html" }
+  ]
+}

@@ -1,0 +1,15 @@
+extends ../../assets/markup/layouts/main
+include ../../components/index-page/index-page
+
+block append variables
+  -
+    const title = 'Toxin: Главная страница';
+    const keywords = 'toxin навигационная страница, главная страница';
+    const description = 'Навигационная страница';
+
+block append head
+  if isProdEnv
+    link(rel = "stylesheet" href = "styles/index.bundle.css")
+
+block body
+  +index-page

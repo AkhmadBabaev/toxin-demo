@@ -1,0 +1,18 @@
+mixin index-page
+  - const { navigation } = require('@components/index-page/data.json');
+
+  body.index-page
+    main.index-page__container
+      h1.index-page__title Навигация по проекту
+
+      nav.index-page__navigation
+        ul.index-page__navigation-list
+
+          each item in navigation
+            - const { name, url } = item;
+
+            li.index-page__navigation-item
+              a.index-page__navigation-link(href = url lang = "en")= name
+
+    unless isProdEnv
+      script(src = "scripts/index.bundle.js")
