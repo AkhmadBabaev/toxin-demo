@@ -1,6 +1,7 @@
 include ../card/card
 
 mixin cards-list(cards)
-  .cards-list
+  ul.cards-list
     each card in cards
-      +card(card)
+      li.cards-list__item
+        +card(card)
