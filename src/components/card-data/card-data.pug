@@ -8,8 +8,6 @@ mixin card-data({ id, reviews = 0, price = 1000, rating = 1, type = 'standart' }
       +card-info({ id, type })
       +price({ value: price, text: 'в сутки' })
 
-    .card-data__separator
-
     .card-data__footer
       +star-rating({ rating })
 

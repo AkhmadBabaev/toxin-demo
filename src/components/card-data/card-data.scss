@@ -8,10 +8,13 @@
     justify-content: space-between;
   }
 
-  &__separator {
-    background: RGBA($basic-color-value, .1);
-    height: .0714rem;
-    margin: .8571rem 0 .6428rem;
+  &__header {
+    padding-bottom: .8571rem;
+  }
+
+  * + &__footer {
+    border-top: .1rem solid RGBA($basic-color-value, .1);
+    padding-top: .6428rem;
   }
 
   &__footer {
