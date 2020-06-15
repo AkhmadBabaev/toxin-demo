@@ -1,7 +1,6 @@
 {
   "private": true,
   "name": "fsd-landing",
-  "version": "1.0.0",
   "author": "Akhmad Babaev <akhmad.babaev@gmail.com>",
   "license": "MIT",
   "repository": {
