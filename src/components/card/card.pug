@@ -1,7 +1,20 @@
-include ../card-data/card-data
 include ../card-slider/card-slider
+include ../star-rating/star-rating
+include ../card-info/card-info
+include ../price/price
 
 mixin card({ id, reviews = 0, price = 1000, rating = 1, images, type = 'standart' })
   .card.js-card
     +card-slider({ images })
-    +card-data({ id, reviews, price, rating, type })
+
+  .card__data
+    .card__data-header
+      +card-info({ id, type })
+      +price({ value: price, text: 'в сутки' })
+
+    .card__data-footer
+      +star-rating({ rating })
+
+      .card__reviews
+        b= reviews
+        | &nbsp;Отзывов

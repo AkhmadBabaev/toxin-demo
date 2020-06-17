@@ -4,4 +4,34 @@
   border-radius: .2857rem;
   position: relative;
   overflow: hidden;
+
+  &__data {
+    padding: 1.6428rem 1.4285rem 1.2857rem;
+    background-color: #fff;
+
+    &-header,
+    &-footer {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-header {
+      padding-bottom: .8571rem;
+    }
+
+    * + &-footer {
+      border-top: .1rem solid RGBA($basic-color-value, .1);
+      padding-top: .6428rem;
+    }
+
+    &-footer {
+      align-items: center;
+    }
+  }
+
+  &__reviews {
+    color: $basic-color;
+    white-space: nowrap;
+    line-height: 1.2857;
+  }
 }
