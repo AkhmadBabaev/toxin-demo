@@ -6,14 +6,8 @@ const generatePages = require('./pages');
 module.exports = {
   context: dirs.input.path,
   entry: {
-    index: [
-      `./${dirs.pages.name}/index/index`,
-      `./${dirs.pages.name}/index/index.scss`,
-    ],
-    colors: [
-      `./${dirs.pages.name}/colors/colors`,
-      `./${dirs.pages.name}/colors/colors.scss`,
-    ],
+    index: `./${dirs.pages.name}/index/index.scss`,
+    colors: `./${dirs.pages.name}/colors/colors.scss`,
     'room-filter': [
       `./${dirs.pages.name}/room-filter/room-filter`,
       `./${dirs.pages.name}/room-filter/room-filter.scss`,
