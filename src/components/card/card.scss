@@ -33,5 +33,9 @@
     color: $basic-color;
     white-space: nowrap;
     line-height: 1.2857;
+
+    &-count {
+      font-weight: bold;
+    }
   }
 }

@@ -16,5 +16,5 @@ mixin card({ id, reviews = 0, price = 1000, rating = 1, images, type = 'standart
       +star-rating({ rating })
 
       .card__reviews
-        b= reviews
+        span.card__reviews-count= reviews
         | &nbsp;Отзывов
