@@ -7,14 +7,14 @@ mixin card({ id, reviews = 0, price = 1000, rating = 1, images, type = 'standart
   .card.js-card
     +card-slider({ images })
 
-  .card__data
-    .card__data-header
-      +card-info({ id, type })
-      +price({ value: price, text: 'в сутки' })
+    .card__data
+      .card__data-header
+        +card-info({ id, type })
+        +price({ value: price, text: 'в сутки' })
 
-    .card__data-footer
-      +star-rating({ rating })
+      .card__data-footer
+        +star-rating({ rating })
 
-      .card__reviews
-        span.card__reviews-count= reviews
-        | &nbsp;Отзывов
+        .card__reviews
+          span.card__reviews-count= reviews
+          | &nbsp;Отзывов
