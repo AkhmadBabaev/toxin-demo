@@ -9,7 +9,7 @@
   &__wrapper {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: auto 24rem;
+    grid-template-columns: auto minmax(auto, 24rem);
     grid-gap: 3.57142rem 2.142857rem;
   }
 
