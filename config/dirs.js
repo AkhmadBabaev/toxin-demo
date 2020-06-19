@@ -53,13 +53,6 @@ class Dirs {
     return { name, path: dirPath };
   }
 
-  get images() {
-    const name = 'images';
-    const dirPath = path.resolve(this.assets.path, name);
-
-    return { name, path: dirPath };
-  }
-
   get fonts() {
     const name = 'fonts';
     const dirPath = path.resolve(this.assets.path, name);
@@ -69,7 +62,7 @@ class Dirs {
 
   get favicons() {
     const name = 'favicons';
-    const dirPath = `${this.images.path}/${name}`;
+    const dirPath = path.resolve(this.assets.path, name);
 
     return { name, path: dirPath };
   }

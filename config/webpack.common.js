@@ -34,11 +34,11 @@ module.exports = {
         loader: 'pug-loader',
       },
 
-      // Images
+      // Favicons
 
       {
         test: /\.(png|jpe?g|gif|svg|ico|webmanifest)$/i,
-        include: dirs.images.path,
+        include: dirs.favicons.path,
         loader: 'file-loader',
         options: {
           name: '[path][name].[ext]',
@@ -46,13 +46,15 @@ module.exports = {
         },
       },
 
+      // Images
+
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
         include: dirs.components.path,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]',
-          outputPath: `${dirs.assets.name}/${dirs.images.name}`,
+          outputPath: `${dirs.assets.name}/images`,
           emitFile: false,
         },
       },
@@ -81,10 +83,10 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: '**/{*,.*}', context: dirs.public.path },
       { from: `${dirs.assets.name}/${dirs.fonts.name}`, to: `${dirs.assets.name}/${dirs.fonts.name}` },
-      { from: `${dirs.assets.name}/${dirs.images.name}`, to: `${dirs.assets.name}/${dirs.images.name}` },
+      { from: `${dirs.assets.name}/${dirs.favicons.name}`, to: `${dirs.assets.name}/favicons` },
       {
-        from: '**/*.{png,jpg,jpeg,gif,svg,ico,webmanifest}',
-        to: `${dirs.assets.name}/${dirs.images.name}`,
+        from: '**/*.{png,jpg,jpeg,gif,svg}',
+        to: `${dirs.assets.name}/images`,
         context: dirs.components.name,
         flatten: true,
       },
