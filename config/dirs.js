@@ -17,14 +17,6 @@ class Dirs {
     return { name, relativeName, path: dirPath };
   }
 
-  get public() {
-    const name = 'public';
-    const relativeName = `../${name}`;
-    const dirPath = path.resolve(__dirname, relativeName);
-
-    return { name, relativeName, path: dirPath };
-  }
-
   get assets() {
     const name = 'assets';
     const dirPath = `${this.input.path}/${name}`;

@@ -81,7 +81,6 @@ module.exports = {
   plugins: [
     ...generatePages(),
     new CopyWebpackPlugin([
-      { from: '**/{*,.*}', context: dirs.public.path },
       { from: `${dirs.assets.name}/${dirs.fonts.name}`, to: `${dirs.assets.name}/${dirs.fonts.name}` },
       { from: `${dirs.assets.name}/${dirs.favicons.name}`, to: `${dirs.assets.name}/favicons` },
       {
