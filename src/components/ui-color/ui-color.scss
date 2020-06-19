@@ -7,6 +7,34 @@
     width: 5rem;
     height: 5rem;
     border-radius: .4285rem;
+
+    &_color_basic-lightest {
+      background-color: $basic-color-lightest;
+    }
+
+    &_color_basic-light {
+      background-color: $basic-color-light;
+    }
+
+    &_color_basic {
+      background-color: $basic-color;
+    }
+
+    &_color_basic-dark {
+      background-color: $basic-color-dark;
+    }
+
+    &_color_basic-darkest {
+      background-color: $basic-color-darkest;
+    }
+
+    &_color_primary {
+      background-color: $primary-color;
+    }
+
+    &_color_secondary {
+      background-color: $secondary-color;
+    }
   }
 
   &__description {
