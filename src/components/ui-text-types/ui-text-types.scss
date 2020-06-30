@@ -13,7 +13,7 @@
     grid-gap: 3.57142rem 2.142857rem;
   }
 
-  &__head  {
+  &__item  {
     color: $typography-color-light;
     text-align: right;
     line-height: 1.25;
@@ -31,7 +31,7 @@
     }
   }
 
-  &__content {
+  &__example {
     &_type_h1 {
       @include h1;
     }

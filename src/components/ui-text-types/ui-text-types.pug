@@ -10,19 +10,19 @@ mixin ui-text-types(types)
     h2.ui-text-types__title Вариации текста
 
     .ui-text-types__wrapper(lang = "en")
-      each item in types
+      each i in types
         -
-          const { type, head, content } = item;
+          const { type, item, example } = i;
 
-          const headClasses = [
-            'ui-text-types__head',
-            typesModifiers('ui-text-types__head')[type],
+          const itemClasses = [
+            'ui-text-types__item',
+            typesModifiers('ui-text-types__item')[type],
           ];
 
-          const contentClasses = [
-            'ui-text-types__content',
-            typesModifiers('ui-text-types__content')[type],
+          const exampleClasses = [
+            'ui-text-types__example',
+            typesModifiers('ui-text-types__example')[type],
           ];
 
-        div(class = headClasses)= head
-        div(class = contentClasses)= content
+        div(class = itemClasses)= item
+        div(class = exampleClasses)= example

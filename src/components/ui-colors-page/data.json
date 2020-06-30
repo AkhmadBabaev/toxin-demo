@@ -9,19 +9,19 @@
     { "value": "#6FCF97", "title": "Green", "color": "secondary" }
   ],
   "types": [{
-    "head": "H1",
-    "content": "This one is the sub-section or widget title",
+    "item": "H1",
+    "example": "This one is the sub-section or widget title",
     "type": "h1"
   }, {
-    "head": "H2",
-    "content": "Next one is the item title inside widgets",
+    "item": "H2",
+    "example": "Next one is the item title inside widgets",
     "type": "h2"
   }, {
-    "head": "H3",
-    "content": "This is a label or CTA text",
+    "item": "H3",
+    "example": "This is a label or CTA text",
     "type": "h3"
   }, {
-    "head": "Body",
-    "content": "This is the body text which is used for most of the design, like paragraphs, lists, etc."
+    "item": "Body",
+    "example": "This is the body text which is used for most of the design, like paragraphs, lists, etc."
   }]
 }
