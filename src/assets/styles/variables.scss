@@ -1,14 +1,14 @@
 @import './fonts/montserrat';
 
-$basic-font-name: 'Montserrat';
-$basic-font-size: 14px;
+$typography-font-name: 'Montserrat';
+$typography-font-size: 14px;
 
-$basic-color-value: 31, 32, 65;
-$basic-color-lightest: RGBA($basic-color-value, 5%);
-$basic-color-light: RGBA($basic-color-value, 25%);
-$basic-color: RGBA($basic-color-value, 50%);
-$basic-color-dark: RGBA($basic-color-value, 75%);
-$basic-color-darkest: RGB($basic-color-value);
+$typography-color-value: 31, 32, 65;
+$typography-color-lightest: RGBA($typography-color-value, 5%);
+$typography-color-light: RGBA($typography-color-value, 25%);
+$typography-color: RGBA($typography-color-value, 50%);
+$typography-color-dark: RGBA($typography-color-value, 75%);
+$typography-color-darkest: RGB($typography-color-value);
 
 $primary-color-value: 188, 156, 255;
 $primary-color: RGB($primary-color-value);

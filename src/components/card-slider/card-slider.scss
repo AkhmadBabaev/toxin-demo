@@ -1,6 +1,8 @@
 @import '~swiper/css/swiper.min.css';
 @import '../../assets/styles/mixins/material-icons';
 
+$card-theme-color: #fff;
+
 .card-slider {
   height: 10.8rem;
 
@@ -32,7 +34,7 @@
       @include material-icons;
 
       content: 'keyboard_arrow_left';
-      color: #fff;
+      color: $card-theme-color;
       text-align: center;
       width: 100%;
       position: absolute;
@@ -71,16 +73,16 @@
       background-color: transparent;
       width: .54rem;
       height: .54rem;
-      border: .0714rem solid #fff;
+      border: .0714rem solid $card-theme-color;
       margin: 0 0 0 .26rem;
       box-sizing: border-box;
       opacity: 1;
-      box-shadow: 0 .4rem .4rem RGBA($basic-color-value, .3);
+      box-shadow: 0 .4rem .4rem RGBA($typography-color-value, .3);
       display: inline-block;
       border-radius: 50%;
 
       &_activated {
-        background-color: #fff;
+        background-color: $card-theme-color;
       }
     }
   }

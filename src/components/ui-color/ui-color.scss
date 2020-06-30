@@ -3,29 +3,29 @@
   align-items: center;
 
   &__box {
-    background: $basic-color-darkest;
+    background: $typography-color-darkest;
     width: 5rem;
     height: 5rem;
     border-radius: .4285rem;
 
     &_color_basic-lightest {
-      background-color: $basic-color-lightest;
+      background-color: $typography-color-lightest;
     }
 
     &_color_basic-light {
-      background-color: $basic-color-light;
+      background-color: $typography-color-light;
     }
 
     &_color_basic {
-      background-color: $basic-color;
+      background-color: $typography-color;
     }
 
     &_color_basic-dark {
-      background-color: $basic-color-dark;
+      background-color: $typography-color-dark;
     }
 
     &_color_basic-darkest {
-      background-color: $basic-color-darkest;
+      background-color: $typography-color-darkest;
     }
 
     &_color_primary {
@@ -38,7 +38,7 @@
   }
 
   &__description {
-    color: $basic-color-darkest;
+    color: $typography-color-darkest;
     font-family: 'Quicksand', 'Open Sans', sans-serif;
     font-size: 1.357rem;
     padding-left: 2.8571rem;

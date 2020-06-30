@@ -1,13 +1,12 @@
 .card {
   width: 19.2857rem;
-  box-shadow: 0 .7142rem 1.4285rem $basic-color-lightest;
+  box-shadow: 0 .7142rem 1.4285rem $typography-color-lightest;
   border-radius: .2857rem;
   position: relative;
   overflow: hidden;
 
   &__data {
     padding: 1.6428rem 1.4285rem 1.2857rem;
-    background-color: #fff;
 
     &-header,
     &-footer {
@@ -20,7 +19,7 @@
     }
 
     * + &-footer {
-      border-top: .1rem solid RGBA($basic-color-value, .1);
+      border-top: .1rem solid RGBA($typography-color-value, .1);
       padding-top: .6428rem;
     }
 
@@ -30,7 +29,7 @@
   }
 
   &__reviews {
-    color: $basic-color;
+    color: $typography-color;
     white-space: nowrap;
     line-height: 1.2857;
 

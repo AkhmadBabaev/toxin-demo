@@ -1,7 +1,7 @@
 .card-info {
   font-family: 'Quicksand', 'Open Sans' ,sans-serif;
   font-weight: bold;
-  color: $basic-color-darkest;
+  color: $typography-color-darkest;
   line-height: 1;
   white-space: nowrap;
 
@@ -10,7 +10,7 @@
   }
 
   &__type {
-    font: .8571rem/1 $basic-font-name, 'Open Sans', sans-serif;
+    font: .8571rem/1 $typography-font-name, 'Open Sans', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     color: $primary-color;
