@@ -3,8 +3,8 @@
 
   @font-face {
     font-family: $name;
-    src: url('#{$pathToFiles}/#{$folderName}-#{$type}.eot');
     src:
+      url('#{$pathToFiles}/#{$folderName}-#{$type}.eot'),
       url('#{$pathToFiles}/#{$folderName}-#{$type}.woff') format('woff'),
       url('#{$pathToFiles}/#{$folderName}-#{$type}.ttf') format('truetype'),
       url('#{$pathToFiles}/#{$folderName}-#{$type}.svg') format('svg');
