@@ -1,22 +1,6 @@
 mixin ui-color({ title = '', value, color = 'basic' })
-  -
-    const boxColorsModifiers = {
-      'basic-lightest': 'color_basic-lightest',
-      'basic-light': 'color_basic-light',
-      basic: 'color_basic',
-      'basic-dark': 'color_basic-dark',
-      'basic-darkest': 'color_basic-darkest',
-      primary: 'color_primary',
-      secondary: 'color_secondary',
-    };
-
-    const boxClasses = [
-      'ui-color__box',
-      `ui-color__box_${boxColorsModifiers[color]}`,
-    ]
-
   .ui-color
-    div(class = boxClasses)
+    div(class = `ui-color__box ui-color__box_color_${color}`)
     .ui-color__description
       .ui-color__title= title
       .ui-color__value= value
