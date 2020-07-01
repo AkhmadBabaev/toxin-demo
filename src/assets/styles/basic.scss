@@ -1,7 +1,5 @@
 @import './variables';
 
-$default-background: #fff;
-
 html {
   color: $typography-color-dark;
   background: $default-background;
@@ -9,4 +7,3 @@ html {
   line-height: 1.7142;
   -webkit-tap-highlight-color: transparent;
 }
-
