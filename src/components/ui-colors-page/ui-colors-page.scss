@@ -4,6 +4,10 @@
 .ui-colors-page {
   margin: 0;
 
+  &__container {
+    @include container;
+  }
+
   &__logo {
     padding-left: 1.1428rem;
     padding-top: 2.1428rem;
@@ -11,10 +15,6 @@
 
   &__title {
     @include visually-hidden;
-  }
-
-  &__container {
-    @include container;
   }
 
   &__main {
