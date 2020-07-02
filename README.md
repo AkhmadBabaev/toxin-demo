@@ -31,6 +31,10 @@
 # Скачайте репозиторий
 git clone https://github.com/AkhmadBabaev/fsd-landing
 
+# или
+
+git clone git@github.com:AkhmadBabaev/fsd-landing.git
+
 # Перейдите в папку с репозиторием
 cd fsd-landing
 
