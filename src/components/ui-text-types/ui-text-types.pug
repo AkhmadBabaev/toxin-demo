@@ -1,5 +1,6 @@
-mixin ui-text-types(types)
+mixin ui-text-types
   -
+    const types = require('@components/ui-text-types/data.json');
     const typesModifiers = (selector) => ({
       h1: `${selector}_type_h1`,
       h2: `${selector}_type_h2`,

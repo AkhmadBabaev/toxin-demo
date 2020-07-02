@@ -1,6 +1,8 @@
 include ../ui-color/ui-color
 
-mixin ui-colors-list(colors)
+mixin ui-colors-list
+  - const colors = require('@components/ui-colors-list/data.json');
+
   section.ui-colors-list
     h2.ui-colors-list__title Цветовая палитра
 

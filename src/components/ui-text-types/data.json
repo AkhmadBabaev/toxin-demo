@@ -1,0 +1,16 @@
+[{
+  "item": "H1",
+  "example": "This one is the sub-section or widget title",
+  "type": "h1"
+}, {
+  "item": "H2",
+  "example": "Next one is the item title inside widgets",
+  "type": "h2"
+}, {
+  "item": "H3",
+  "example": "This is a label or CTA text",
+  "type": "h3"
+}, {
+  "item": "Body",
+  "example": "This is the body text which is used for most of the design, like paragraphs, lists, etc."
+}]
