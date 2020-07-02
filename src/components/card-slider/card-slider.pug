@@ -5,7 +5,7 @@ mixin card-slider({ images })
         - const { url, alt } = image;
 
         .card-slider__slide.swiper-slide
-          img.card-slider__slide-img(src = url alt = alt)
+          img.card-slider__slide-img(src = require(`../../${url}`) alt = alt)
 
     .card-slider__button.card-slider__button_side_prev
     .card-slider__button.card-slider__button_side_next
