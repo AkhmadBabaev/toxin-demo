@@ -9,6 +9,15 @@ class StarRating {
   }
 
   _init() {
+    this._defineStars();
+    this._addListenres();
+  }
+
+  _defineStars() {
+    this.stars = this._element.querySelectorAll('.star-rating__star');
+  }
+
+  _addListenres() {
     this._element.addEventListener('click', this._handleStarClick);
     this._element.addEventListener('focusin', this._handleStarFocusIn);
     this._element.addEventListener('focusOut', this._handleStarFocusOut);
@@ -18,11 +27,11 @@ class StarRating {
     const { target } = event;
     if (!target.classList.contains('js-star-rating__star')) return;
 
-    const activeClass = 'star-rating__star_activated';
-    if (target.classList.contains(activeClass)) return;
-
-    this._element.querySelector(`.${activeClass}`).classList.remove(activeClass);
-    target.classList.add(activeClass);
+    this.stars.forEach((star) => {
+      target.dataset.index >= star.dataset.index
+        ? star.classList.add('star-rating__star_activated')
+        : star.classList.remove('star-rating__star_activated');
+    });
   }
 
   _handleStarFocusIn() {

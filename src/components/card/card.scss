@@ -1,38 +1,38 @@
 @import '../../assets/styles/variables';
+@import '../card-slider/card-slider';
+@import '../card-info/card-info';
+@import '../price/price';
+@import '../star-rating/star-rating';
 
 .card {
   width: 19.2857rem;
   box-shadow: 0 .7142rem 1.4285rem $typography-color-lightest;
   border-radius: .2857rem;
-  position: relative;
   overflow: hidden;
 
   &__data {
     padding: 1.6428rem 1.4285rem 1.2857rem;
 
-    &-header,
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: .8571rem;
+    }
+
     &-footer {
       display: flex;
       justify-content: space-between;
-    }
-
-    &-header {
-      padding-bottom: .8571rem;
+      align-items: center;
+      padding-top: .6428rem;
     }
 
     * + &-footer {
       border-top: .1rem solid RGBA($typography-color-value, .1);
-      padding-top: .6428rem;
-    }
-
-    &-footer {
-      align-items: center;
     }
   }
 
   &__reviews {
     color: $typography-color;
-    white-space: nowrap;
     line-height: 1.2857;
 
     &-value {

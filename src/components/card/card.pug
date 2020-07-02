@@ -3,13 +3,13 @@ include ../star-rating/star-rating
 include ../card-info/card-info
 include ../price/price
 
-mixin card({ id, reviews = 0, price = 1000, rating = 1, images, type = 'standart' })
+mixin card({ id, reviews = 0, price = 1000, rating = 1, images, isLuxury = false })
   .card
     +card-slider({ images })
 
     .card__data
       .card__data-header
-        +card-info({ id, type })
+        +card-info({ id, isLuxury })
         +price({ value: price, text: 'в сутки' })
 
       .card__data-footer

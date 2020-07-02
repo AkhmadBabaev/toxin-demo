@@ -16,20 +16,22 @@ $card-theme-color: #fff;
     }
   }
 
-  &__button-prev,
-  &__button-next {
+  &__button {
     opacity: 0;
     background: linear-gradient(
       90deg,
       rgba(0, 0, 0, .5) 0%,
-      rgba(0, 0, 0, 0) 99.99%,
-      rgb(255, 255, 255) 100%);
+      rgba(0, 0, 0, 0) 100%);
     width: 3.14285rem;
     height: 100%;
     position: absolute;
     top: 0;
-    z-index: 10;
+    z-index: 2;
     cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
 
     &:before {
       @include material-icons;
@@ -42,33 +44,25 @@ $card-theme-color: #fff;
       top: 50%;
       transform: translateY(-50%);
     }
-  }
 
-  &__button-prev {
-    left: 0;
-  }
+    &_side_prev {
+      left: 0;
+    }
 
-  &__button-next {
-    right: 0;
-    transform: rotateY(180deg);
-  }
-
-  &:hover &__button-prev,
-  &:hover &__button-next {
-    opacity: 1;
+    &_side_next {
+      right: 0;
+      transform: rotateY(180deg);
+    }
   }
 
   & &__pagination {
     text-align: right;
-    width: auto;
     padding: 0 1.1rem;
     box-sizing: border-box;
     position: absolute;
-    z-index: 10;
-    left: unset;
+    z-index: 1;
     right: 0;
     bottom: .6rem;
-    pointer-events: none;
 
     &-bullet {
       background-color: transparent;
@@ -77,7 +71,6 @@ $card-theme-color: #fff;
       border: .0714rem solid $card-theme-color;
       margin: 0 0 0 .26rem;
       box-sizing: border-box;
-      opacity: 1;
       box-shadow: 0 .4rem .4rem RGBA($typography-color-value, .3);
       display: inline-block;
       border-radius: 50%;

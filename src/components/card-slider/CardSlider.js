@@ -17,8 +17,8 @@ class CardSlider {
         bulletActiveClass: 'card-slider__pagination-bullet_activated',
       },
       navigation: {
-        nextEl: '.card-slider__button-next',
-        prevEl: '.card-slider__button-prev',
+        prevEl: '.card-slider__button_side_prev',
+        nextEl: '.card-slider__button_side_next',
       },
     });
   }

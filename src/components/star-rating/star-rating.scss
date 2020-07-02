@@ -1,32 +1,37 @@
 @import '../../assets/styles/mixins/material-icons';
 @import '../../assets/styles/variables';
 
+$rating-secondary-color: #8ba4f9;
+$rating-theme: linear-gradient(
+  180deg,
+  $primary-color 0%,
+  $rating-secondary-color 100%);
+
 .star-rating {
   display: flex;
 
   &__star {
     @include material-icons;
 
-    color: $primary-color;
-    background: linear-gradient(180deg, $primary-color 0%, #8ba4f9 100%);
+    background: $rating-theme;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
 
     &::before {
-      content: 'star';
+      content: 'star_border';
     }
 
-    &_activated ~ &::before {
-      content: 'star_border';
+    &_activated::before {
+      content: 'star';
     }
 
     &:focus {
       outline: none;
+      transform: scale(1.3);
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
       transform: scale(1.3);
     }
   }

@@ -9,7 +9,7 @@ mixin star-rating({ rating = 1, max = 5 } = {})
       - count += 1;
 
       div(
-        class = (count !== rating) ? starClasses : `${starClasses} ${activatedStarClass}`
+        class = (count > rating) ? starClasses : `${starClasses} ${activatedStarClass}`
         tabindex = 0
         data-index = count
       )

@@ -1,7 +1,6 @@
-mixin card-info({ id, type = 'standart' })
-  - const isLuxury = type === 'luxury';
-
-  .card-info №&nbsp;
+mixin card-info({ id, isLuxury = false })
+  .card-info
+    | №&nbsp;
     span.card-info__id= id
     if isLuxury
       span.card-info__type люкс
