@@ -11,8 +11,8 @@
   }
 
   &__type {
-    font: .8571rem/1 $typography-font-name, 'Open Sans', sans-serif;
-    font-weight: bold;
+    font-family: $typography-font-name, 'Open Sans', sans-serif;
+    font-size: .8571rem;
     text-transform: uppercase;
     color: $primary-color;
     margin-left: .35rem;

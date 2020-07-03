@@ -4,7 +4,7 @@
     "price": "9 990",
     "rating": 5,
     "reviews": 145,
-    "isLuxury": "luxury",
+    "isLuxury": true,
     "images": [{
       "url": "components/card/images/image1.jpg",
       "alt": "просторный номер абрикосового цвета"
@@ -41,7 +41,7 @@
     "price": "8 500",
     "rating": 3,
     "reviews": 35,
-    "isLuxury": "luxury",
+    "isLuxury": true,
     "images": [{
       "url": "components/card/images/image3.jpg",
       "alt": "номер с красно-белой расцветкой"

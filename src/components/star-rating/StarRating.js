@@ -10,14 +10,14 @@ class StarRating {
 
   _init() {
     this._defineStars();
-    this._addListenres();
+    this._addListeners();
   }
 
   _defineStars() {
     this.stars = this._element.querySelectorAll('.star-rating__star');
   }
 
-  _addListenres() {
+  _addListeners() {
     this._element.addEventListener('click', this._handleStarClick);
     this._element.addEventListener('focusin', this._handleStarFocusIn);
     this._element.addEventListener('focusOut', this._handleStarFocusOut);
