@@ -5,11 +5,11 @@ class StarRating {
   }
 
   _init() {
-    this._defineStars();
+    this._findStars();
     this._addListeners();
   }
 
-  _defineStars() {
+  _findStars() {
     this.stars = this._element.querySelectorAll('.star-rating__star');
   }
 
