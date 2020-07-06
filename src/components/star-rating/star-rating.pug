@@ -5,11 +5,9 @@ mixin star-rating({ rating = 1, max = 5 } = {})
     let count = 0;
 
   .star-rating.js-star-rating
-    while count < max
-      - count += 1;
-
-      div(
+    while count++ < max
+      button(
         class = (count > rating) ? starClasses : `${starClasses} ${activatedStarClass}`
-        tabindex = 0
+        type = "button"
         data-index = count
       )

@@ -1,10 +1,6 @@
 class StarRating {
   constructor(element) {
     this._element = element;
-    this._handleStarClick = this._handleStarClick.bind(this);
-    this._handleStarFocusIn = this._handleStarFocusIn.bind(this);
-    this._handleStarFocusOut = this._handleStarFocusOut.bind(this);
-    this._handleDocumentKeyUp = this._handleDocumentKeyUp.bind(this);
     this._init();
   }
 
@@ -18,9 +14,7 @@ class StarRating {
   }
 
   _addListeners() {
-    this._element.addEventListener('click', this._handleStarClick);
-    this._element.addEventListener('focusin', this._handleStarFocusIn);
-    this._element.addEventListener('focusOut', this._handleStarFocusOut);
+    this._element.addEventListener('click', this._handleStarClick.bind(this));
   }
 
   _handleStarClick(event) {
@@ -32,18 +26,6 @@ class StarRating {
         ? star.classList.add('star-rating__star_activated')
         : star.classList.remove('star-rating__star_activated');
     });
-  }
-
-  _handleStarFocusIn() {
-    document.addEventListener('keyup', this._handleDocumentKeyUp);
-  }
-
-  _handleStarFocusOut() {
-    document.removeEventListener('keyup', this._handleDocumentKeyUp);
-  }
-
-  _handleDocumentKeyUp(event) {
-    event.code === 'Enter' && event.target.dispatchEvent(new Event('click', { bubbles: true }));
   }
 }
 

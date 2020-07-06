@@ -16,6 +16,8 @@ $rating-theme: linear-gradient(
     background: $rating-theme;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding: 0;
+    border: none;
     cursor: pointer;
 
     &::before {
