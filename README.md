@@ -2,7 +2,7 @@
 ============
 
 Тестовое задание компании FSD.
-[Главная страница](https://akhmadbabaev.github.io/fsd-landing/).
+[Главная страница](https://akhmadbabaev.github.io/toxin-demo/).
 
 ## 🏷️ Содержание
 
@@ -29,13 +29,13 @@
 
 ```bash
 # Скачайте репозиторий
-git clone https://github.com/AkhmadBabaev/fsd-landing
+git clone https://github.com/AkhmadBabaev/toxin-demo
 
 # или
-git clone git@github.com:AkhmadBabaev/fsd-landing.git
+git clone git@github.com:AkhmadBabaev/toxin-demo.git
 
 # Перейдите в папку с репозиторием
-cd fsd-landing
+cd toxin-demo
 
 # Установите зависимости
 yarn install

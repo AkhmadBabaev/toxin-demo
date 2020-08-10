@@ -1,13 +1,13 @@
 {
   "private": true,
-  "name": "fsd-landing",
+  "name": "toxin-demo",
   "author": "Akhmad Babaev <akhmad.babaev@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AkhmadBabaev/fsd-landing.git"
+    "url": "https://github.com/AkhmadBabaev/toxin-demo.git"
   },
-  "bugs": "https://github.com/AkhmadBabaev/fsd-landing/issues",
+  "bugs": "https://github.com/AkhmadBabaev/toxin-demo/issues",
   "scripts": {
     "clear": "rimraf ./docs",
     "prod": "yarn clear && cross-env NODE_ENV=production webpack --config ./config/webpack.prod.js --progress",
